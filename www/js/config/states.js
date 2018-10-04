@@ -69,6 +69,15 @@ angular
         }
       }
     })
+    .state('app.event', {
+      url: '/events/:postId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/events/show.html',
+          controller: 'EventController'
+        }
+      }
+    })
 
     .state('app.services', {
       url: '/services',
