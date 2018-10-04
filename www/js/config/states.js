@@ -10,42 +10,96 @@ angular
       controller: 'ApplicationController'
     })
 
-    .state('app.search', {
-      url: '/search',
+    .state('app.home', {
+      url: '/home',
       views: {
         'menuContent': {
-          templateUrl: 'templates/search.html'
+          templateUrl: 'templates/home/index.html',
+          controller: 'HomeController'
         }
       }
     })
 
-    .state('app.browse', {
-        url: '/browse',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/browse.html'
-          }
-        }
-      })
-      .state('app.playlists', {
-        url: '/playlists',
-        views: {
-          'menuContent': {
-            templateUrl: 'templates/playlists.html',
-            controller: 'PlaylistsController'
-          }
-        }
-      })
-
-    .state('app.single', {
-      url: '/playlists/:playlistId',
+    .state('app.emergencies', {
+      url: '/emergencies',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlist.html',
-          controller: 'PlaylistController'
+          templateUrl: 'templates/emergencies/index.html',
+          controller: 'EmergenciesController'
+        }
+      }
+    })
+    
+    .state('app.usefulData', {
+      url: '/useful_data',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/usefulData/index.html',
+          controller: 'UsefulDataController'
+        }
+      }
+    })
+
+    .state('app.authorizations', {
+      url: '/authorizations',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/authorizations/index.html',
+          controller: 'AuthorizationsController'
+        }
+      }
+    })
+
+    .state('app.reservations', {
+      url: '/reservations',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/reservations/index.html',
+          controller: 'ReservationsController'
+        }
+      }
+    })
+
+    .state('app.events', {
+      url: '/events',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/events/index.html',
+          controller: 'EventsController'
+        }
+      }
+    })
+
+    .state('app.services', {
+      url: '/services',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/services/index.html',
+          controller: 'ServicesController'
+        }
+      }
+    })
+
+    .state('app.posts', {
+      url: '/posts',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/posts/index.html',
+          controller: 'PostsController'
+        }
+      }
+    })
+    .state('app.post', {
+      url: '/posts/:postId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/posts/show.html',
+          controller: 'PostController'
         }
       }
     });
+
+
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/home');
   });

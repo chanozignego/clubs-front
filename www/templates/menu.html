@@ -13,23 +13,42 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
+    <!-- <ion-header-bar class="bar-stable">
       <h1 class="title">Left</h1>
-    </ion-header-bar>
+    </ion-header-bar> -->
     <ion-content>
+      <div class="header">
+        <img src="img/simpit-logo.png" height="100" style="display:block; margin:auto;"> </img>
+      </div>
       <ion-list>
+        <ion-item menu-close href="#/app/home">
+          Inicio
+        </ion-item>
+        <ion-item menu-close href="#/app/emergencies">
+          Emergencias
+        </ion-item>
+        <ion-item menu-close href="#/app/posts">
+          Noticias
+        </ion-item>
+        <ion-item menu-close href="#/app/useful_data">
+          Datos Útiles
+        </ion-item>
+        <ion-item menu-close href="#/app/authorizations">
+          Autorizaciones
+        </ion-item>
+        <ion-item menu-close href="#/app/reservations">
+          Reservas
+        </ion-item>
+        <ion-item menu-close href="#/app/events">
+          Eventos
+        </ion-item>
+        <ion-item menu-close href="#/app/services">
+          Guía de Servicios
+        </ion-item>
         <ion-item menu-close ng-click="login()">
           Login
         </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
-        </ion-item>
+
       </ion-list>
     </ion-content>
   </ion-side-menu>
