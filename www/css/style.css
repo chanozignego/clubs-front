@@ -1,4 +1,10 @@
 /* Login-signup */
-@media (max-width:680px) { .rememberLog{width:100%;}
+.forgotpass{color: #20BFA9; position: relative; font-weight: 900;text-decoration: none;position:absolute;top:145px;right:50px}
+.remember{border-radius:15px;margin-bottom:15px;width:50%;}
+@media (max-width:1028px) { .forgotpass{top:195px;right: 25px;} .remember{width: 100%;margin-bottom: 40px;} }
 
-}
+/* emergencies */
+@media (min-width:680px){.emergencies{margin-left:} .emergency{width:48%;display: inline-block;margin: 1%;border-radius: 20px;padding: 100px}}
+.emergency{font-weight: bold;}
+.secondary-info{padding-top: 20px;font-weight: normal;}
+.emergency img {height: 30px;position: absolute;right: 40px;top: 28px;}

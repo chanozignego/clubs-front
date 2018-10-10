@@ -10,7 +10,9 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "@ionic-native/call-number": "^4.15.0",
     "@ionic/pro": "2.0.3",
+    "call-number": "^1.0.1",
     "cordova-android": "7.1.1",
     "cordova-browser": "5.0.4",
     "cordova-ios": "4.5.5",
@@ -28,7 +30,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "mx.ferreyra.callnumber": {}
     },
     "platforms": [
       "browser",
