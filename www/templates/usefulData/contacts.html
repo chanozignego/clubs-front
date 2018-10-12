@@ -1,0 +1,23 @@
+<ion-content class="useful-content" style="top: 50px;">
+  <ion-list>
+    <ion-item ng-repeat="contact in contacts" style="widht: 100%;">
+      <div style="display: inline-flex; width: 100%;">
+        <div>
+          <b>
+            {{contact.name}}
+          </b>
+          <br>
+          {{contact.phone != "" ? contact.phone : contact.email}}
+          <br>
+          {{contact.description}}
+        </div>
+        <!-- <div class="text-right">
+          <a>
+            <ion-icon name="call"></ion-icon>
+            Llamar
+          </a>
+        </div> -->
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

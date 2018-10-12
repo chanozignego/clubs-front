@@ -13,11 +13,28 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 
-.ion-icon {
-  background-color: #0b486b;
-  padding: 4px 10px;
-  color: white;
-  border-radius: 50%;
-  font-size: 20px;
-  margin-right: 10px;
+ion-tabs {
+  height: 100%;
+}
+
+ion-content .scroll {
+  height: 100%;
+}
+
+.tab-nav.tabs {
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+
+.pane.tab-content {
+  padding-top: 40px;
+}
+
+.tab-item.tab-item-active {
+  border-color: #387ef5;
+  color: #387ef5;
+  margin-top: 1px;
+  border-width: 0px 0px 2px 0px !important;
+  border-style: solid;
 }
