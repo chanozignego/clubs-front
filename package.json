@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@ionic-native/call-number": "^4.15.0",
+    "@ionic-native/core": "^4.2.0",
     "@ionic/pro": "2.0.3",
     "call-number": "^1.0.1",
     "cordova-android": "7.1.1",

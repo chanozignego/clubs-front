@@ -4,7 +4,69 @@
 @media (max-width:1028px) { .forgotpass{top:195px;right: 25px;} .remember{width: 100%;margin-bottom: 40px;} }
 
 /* emergencies */
-@media (min-width:680px){.emergencies{margin-left:} .emergency{width:48%;display: inline-block;margin: 1%;border-radius: 20px;padding: 100px}}
+@media (min-width:680px){.emergencies{margin-left:} .emergency{margin50px;}}
 .emergency{font-weight: bold;}
 .secondary-info{padding-top: 20px;font-weight: normal;}
-.emergency img {height: 30px;position: absolute;right: 40px;top: 28px;}
+.emergency img {height: 30px;position: absolute;right: 40px;top: 30px;}
+
+
+/* Hide Placeholder */
+:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  /* color: transparent; */
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}::-moz-placeholder {
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  /* color: transparent; */
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-ms-input-placeholder {
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  /* color: transparent; */
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:-moz-placeholder {
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  /* color: transparent; */
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}

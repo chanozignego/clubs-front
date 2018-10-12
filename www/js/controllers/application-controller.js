@@ -15,18 +15,18 @@ angular
     // Create the login modal that we will use later
     $ionicModal.fromTemplateUrl('templates/login.html', {
       scope: $scope
-    }).then(function(modal) {
-      $scope.modal = modal;
+    }).then(function(modalLogin) {
+      $scope.modalLogin = modalLogin;
     });
 
     // Triggered in the login modal to close it
     $scope.closeLogin = function() {
-      $scope.modal.hide();
+      $scope.modalLogin.hide();
     };
 
     // Open the login modal
     $scope.login = function() {
-      $scope.modal.show();
+      $scope.modalLogin.show();
     };
 
     // Perform the login action when the user submits the login form
@@ -48,18 +48,18 @@ angular
   // Create the register modal that we will use later
   $ionicModal.fromTemplateUrl('templates/register.html', {
     scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
+  }).then(function(modalSignUp) {
+    $scope.modalSignUp = modalSignUp;
   });
 
   // Triggered in the register modal to close it
   $scope.closeRegister = function() {
-    $scope.modal.hide();
+    $scope.modalSignUp.hide();
   };
 
   // Open the Register modal
   $scope.register = function() {
-    $scope.modal.show();
+    $scope.modalSignUp.show();
   };
 
   // Perform the login action when the user submits the login form
