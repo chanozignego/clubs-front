@@ -72,4 +72,34 @@ angular
       $scope.closeRegister();
     }, 1000);
   };
+
+
+
+$scope.ForgotpassData = {};
+
+
+$ionicModal.fromTemplateUrl('templates/forgotpass.html', {
+  scope: $scope
+}).then(function(modalForgotpass) {
+  $scope.modalForgotpass = modalForgotpass;
+});
+
+
+$scope.closeForgotpass = function() {
+  $scope.modalForgotpass.hide();
+};
+
+
+$scope.forgotpass = function() {
+  $scope.modalForgotpass.show();
+};
+
+
+$scope.doForgotpass = function() {
+  console.log('Doing forgotpass', $scope.forgotpassData);
+
+  $timeout(function() {
+    $scope.closeForgotpass();
+  }, 1000);
+};
 })

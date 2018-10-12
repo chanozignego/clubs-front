@@ -10,11 +10,6 @@
 .emergency img {height: 30px;position: absolute;right: 40px;top: 30px;}
 
 
-/* Hide Placeholder */
-:focus {
-  outline: none;
-}
-
 ::-webkit-input-placeholder {
   -webkit-transition: opacity 0.35s ease-in-out;
   -moz-transition: opacity 0.35s ease-in-out;
