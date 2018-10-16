@@ -2,8 +2,8 @@
   <ion-content>
     <ion-icon name="call"></ion-icon>
     <ion-list class="emergencies">
-      <ion-item class="emergency" ng-repeat="emergencies in emergencies" href="#/app/emergencies/{{emergency.id}}">
-         {{emergencies.title}} <div class="secondary-info">{{emergencies.description}}</div> <img src="img/telephone.png"   alt="">
+      <ion-item class="emergency" ng-repeat="emergency in emergencies" href="#/app/emergencies/{{emergency.id}}">
+        <div ng-include src="'templates/emergencies/emergencyCard.html'"></div>
       </ion-item>
     </ion-list>
   </ion-content>
