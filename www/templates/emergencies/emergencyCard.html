@@ -1,5 +1,26 @@
-{{emergency.title}} 
+<!-- {{emergency.title}} 
 <div class="secondary-info">
   {{emergency.description}}
 </div> 
 <img src="img/telephone.png" alt="">
+ -->
+
+<div style="display: inline-flex; width: 100%;">
+  <div>
+    <b>
+      {{emergency.title || " - "}}
+    </b>
+    <br>
+    <div class="secondary-info">
+      {{emergency.description || " - "}}
+    </div>
+  </div>
+      
+  <div class="text-right" style="right: 20px; position: absolute; width: 100%; vertical-align: baseline;" >
+    <a href style="text-align: center;">
+      <i class="ion-call icon ion-ios-telephone" style="font-size: 40px;"></i>
+      <br>
+      Llamar
+    </a>
+  </div>
+</div>

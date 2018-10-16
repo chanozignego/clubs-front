@@ -59,6 +59,7 @@ angular
         }
       }
     })
+    
 
     .state('app.events', {
       url: '/events',

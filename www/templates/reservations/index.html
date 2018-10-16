@@ -2,10 +2,7 @@
   <ion-content>
     <ion-list class="reservations">
       <ion-item class="reservation" ng-repeat="reservation in reservations" href="#/app/reservations/{{reservation.id}}">
-        <div class="reservations-bookeable">{{reservation.bookeable}}</div>
-        <div class="reservations-date">{{reservation.date}}</div>
-        <div class="reservations-time">{{reservation.time}}</div>
-        <div class="reservations-description">{{reservation.description}}</div>
+        <div ng-include src="'templates/reservations/reservationCard.html'"></div>
       </ion-item>
     </ion-list>
   </ion-content>
