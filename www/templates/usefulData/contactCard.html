@@ -1,0 +1,19 @@
+<div style="display: inline-flex; width: 100%;">
+  <div>
+    <b>
+      {{contact.name || " - "}}
+    </b>
+    <br>
+    {{contact.phone != "" ? contact.phone : contact.email || " - "}}
+    <br>
+    {{contact.description || " - "}}
+  </div>
+      
+  <div class="text-right"  style="right: 20px; position: absolute; width: 100%; vertical-align: baseline;" >
+    <a href style="text-align: center;">
+      <i class="ion-call icon ion-ios-telephone" style="font-size: 40px;"></i>
+      <br>
+      Llamar
+    </a>
+  </div>
+</div>

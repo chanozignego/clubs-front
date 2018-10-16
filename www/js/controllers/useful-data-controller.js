@@ -12,11 +12,17 @@ angular
     ];
 
     $scope.documents = [
-
+      {id: "1", title: "Preguntas Frecuentes", url: "https://twitter.com/" },
+      {id: "2", title: "Reglamento de Construcción", url: "https://twitter.com/" },
+      {id: "3", title: "Reglamento de Convivencia", url: "https://twitter.com/" },
+      {id: "4", title: "Masterplan", url: "https://twitter.com/" },
+      {id: "5", title: "Libro de Actas", url: "https://twitter.com/" }
     ];
 
     $scope.instructions = [
-
+      {id: "1", title: "Cómo hacer invitaciones", url: "https://twitter.com/" },
+      {id: "2", title: "Cargar grupo familiar", url: "https://twitter.com/" },
+      {id: "3", title: "Habilitar personas", url: "https://twitter.com/" }
     ];
 
   })

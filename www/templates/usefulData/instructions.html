@@ -1,11 +1,7 @@
 <ion-content class="useful-content" style="top: 50px;">
   <ion-list>
-    <ion-item ng-repeat="contact in contacts" href="#/app/posts/{{contact.id}}">
-      ID: {{contact.id}}
-      Nombre: {{contact.name}}
-      Descripcion: {{contact.description}}
-      Teléfono: {{contact.phone}}
-      Email: {{contact.email}}
+    <ion-item ng-repeat="instruction in instructions" style="widht: 100%;" href="{{instruction.url}}">
+      <div ng-include src="'templates/usefulData/instructionCard.html'"></div>
     </ion-item>
   </ion-list>
 </ion-content>
