@@ -29,6 +29,15 @@ angular
         }
       }
     })
+    .state('app.emergency', {
+      url: '/emergencies/:emergencyId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/emergencies/show.html',
+          controller: 'EmergencyController'
+        }
+      }
+    })
     
     .state('app.usefulData', {
       url: '/useful_data',

@@ -1,0 +1,26 @@
+<ion-view view-title="Emergencia">
+  <ion-content style="padding: 10px;">
+    <div style="display: inline-flex; width: 100%;">
+      <div>
+        <h2>
+          {{emergency.title || " - "}}
+        </h2>
+        <h4>
+          {{emergency.description || " - "}}
+        </h4>
+        <h4>
+          {{emergency.address || " - "}}
+        </h4>
+      </div>
+          
+      <div class="text-right" style="right: 20px; position: absolute; width: 100%; vertical-align: baseline;" >
+        <a href style="text-align: center;">
+          <i class="ion-call icon ion-ios-telephone" style="font-size: 40px;"></i>
+          <br>
+          Llamar
+        </a>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
