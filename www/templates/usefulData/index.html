@@ -1,9 +1,28 @@
 <ion-view view-title="Datos Útiles">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
-        {{post.title}}
-      </ion-item>
-    </ion-list>
+
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+      <ion-tab title="Contactos" icon-on="ion-ios-person" icon-off="ion-ios-person-outline">
+        <ion-view>
+          <div ng-include src="'templates/usefulData/contacts.html'"></div>
+        </ion-view>
+      </ion-tab>
+
+      <ion-tab title="Documentos" icon-on="ion-paperclip" icon-off="ion-paperclip">
+        <ion-view>
+          <div ng-include src="'templates/usefulData/documents.html'"></div>
+        </ion-view>
+      </ion-tab>
+
+      <ion-tab title="Instrucciones" icon-on="ion-link" icon-off="ion-link">
+        <ion-view>
+          <div ng-include src="'templates/usefulData/instructions.html'"></div>
+        </ion-view>
+      </ion-tab>
+
+    </ion-tabs>
+
   </ion-content>
 </ion-view>
+
