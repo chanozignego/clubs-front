@@ -26,6 +26,8 @@ angular
 
     // Open the login modal
     $scope.login = function() {
+      $scope.closeRegister();
+      $scope.closeForgotpass();
       $scope.modalLogin.show();
     };
 
@@ -59,6 +61,8 @@ angular
 
   // Open the Register modal
   $scope.register = function() {
+    $scope.closeLogin();
+    $scope.closeForgotpass();
     $scope.modalSignUp.show();
   };
 
@@ -91,6 +95,8 @@ $scope.closeForgotpass = function() {
 
 
 $scope.forgotpass = function() {
+  $scope.closeRegister();
+  $scope.closeLogin();
   $scope.modalForgotpass.show();
 };
 
