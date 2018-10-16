@@ -59,7 +59,16 @@ angular
         }
       }
     })
-    
+
+    .state('app.reservation', {
+      url: '/reservations/:reservationId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/reservations/show.html',
+          controller: 'ReservationController'
+        }
+      }
+    })
 
     .state('app.events', {
       url: '/events',
