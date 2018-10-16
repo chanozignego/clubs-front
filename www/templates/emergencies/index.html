@@ -1,8 +1,9 @@
 <ion-view view-title="Emergencias">
   <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
-        {{post.title}}
+    <ion-icon name="call"></ion-icon>
+    <ion-list class="emergencies">
+      <ion-item class="emergency" ng-repeat="emergency in emergencies" href="#/app/emergencies/{{emergency.id}}">
+        <div ng-include src="'templates/emergencies/emergencyCard.html'"></div>
       </ion-item>
     </ion-list>
   </ion-content>
