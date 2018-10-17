@@ -125,6 +125,16 @@ angular
           controller: 'PostController'
         }
       }
+    })
+
+    .state('app.profile', {
+      url: '/profile',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/profile/index.html',
+          controller: 'ProfileController'
+        }
+      }
     });
 
 
