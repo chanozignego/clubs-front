@@ -9901,3 +9901,6 @@ ion-content .scroll {
   border-radius: 50%;
   font-size: 20px;
   margin-right: 10px; }
+
+.post.item.item-complex .item-content {
+  padding: 0px; }
