@@ -27,6 +27,7 @@ angular
     // Open the login modal
     $scope.login = function() {
       $scope.closeRegister();
+      $scope.closeChangepass();
       $scope.closeForgotpass();
       $scope.modalLogin.show();
     };
@@ -62,6 +63,7 @@ angular
   // Open the Register modal
   $scope.register = function() {
     $scope.closeLogin();
+    $scope.closeChangepass();
     $scope.closeForgotpass();
     $scope.modalSignUp.show();
   };
@@ -96,6 +98,7 @@ $scope.closeForgotpass = function() {
 
 $scope.forgotpass = function() {
   $scope.closeRegister();
+  $scope.closeChangepass();
   $scope.closeLogin();
   $scope.modalForgotpass.show();
 };
@@ -108,4 +111,44 @@ $scope.doForgotpass = function() {
     $scope.closeForgotpass();
   }, 1000);
 };
+
+
+
+$scope.ChangepassData = {};
+
+
+$ionicModal.fromTemplateUrl('templates/changepass.html', {
+  scope: $scope
+}).then(function(modalChangepass) {
+  $scope.modalChangepass = modalChangepass;
+});
+
+
+$scope.closeChangepass = function() {
+  $scope.modalChangepass.hide();
+};
+
+
+$scope.changepass = function() {
+  $scope.closeRegister();
+  $scope.closeLogin();
+  $scope.closeForgotpass();
+  $scope.modalChangepass.show();
+};
+
+
+$scope.doChangepass = function() {
+  console.log('Doing changepass', $scope.changepassData);
+
+  $timeout(function() {
+    $scope.closeChangepass();
+  }, 1000);
+};
+
+
+
+
+
+
+
 })

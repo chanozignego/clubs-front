@@ -1,0 +1,26 @@
+<ion-modal-view style="position:absolute;top:50px;bottom:50px;border-radius:10px;max-width:800px;margin:0 auto;max-height:800px">
+<img class="close-form" src="img/close.png" height="18px"  ng-click="closeChangepass()" alt="">
+  <ion-content style="width:80%;margin:0 auto;overflow:hidden;">
+    <img src="img/simpit-logo.png" height="130" style="display:block; margin:auto;margin-top:30px;">
+    <div style="margin-bottom:40px;"class="col-xs-12 text-center"><h4>
+      Si cambias la contraseña, cerrarás sesión en tus dispositivos. Cuando vuelvas a iniciar sesión, deberás introducir la nueva contraseña.</h4></div>
+      <form ng-submit="dochangepass()">
+        <div class="list">
+          <h4 style="text-align:center;">Ingrese la contraseña actual.</h4>
+          <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+            <input type="password" style="text-align:center"  placeholder="Ingrese la contraseña actual." style="width:10%;font-weight:bold;">
+          </label>
+          <h4 style="text-align:center;margin-top:40px;">Ingrese La nueva Contraseña.</h4>
+          <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+            <input type="password" style="text-align:center" ng-model="changepassData.password" placeholder="Ingrese la nueva contraseña." style="width:10%;font-weight:bold;">
+          </label>
+          <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+            <input type="password" style="text-align:center" ng-model="changepassData.repassword" placeholder="Reingrese la nueva contraseña." style="width:10%;font-weight:bold;">
+          </label>
+
+        </div>
+        <button class="button button-block button-positive" ng-click="" style="width:300px;margin:0 auto;"type="submit">Enviar</button>
+      </form>
+
+  </ion-content>
+</ion-modal-view>
