@@ -21,6 +21,14 @@
 .reservations-time{float: right;clear:right;padding-top: 20px;}
 .reservations-description{padding-top: 20px;}
 
+/* reservation */
+.reserva-data{;padding-top:50px;width: 50%;margin: 0 auto;}
+.comment{width:50%;margin:0 auto;margin-top:50px;}
+@media (max-width:680px) { .reserva-data{width: 80%} .comment {width:80%}
+
+}
+
+
 @media (min-width:680px){.reservation:hover{opacity: 0.7;transition: 0.3s}.reservations-bookeable{display: inline-block}}
 
 

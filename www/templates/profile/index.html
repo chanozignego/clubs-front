@@ -1,0 +1,13 @@
+<ion-view view-title="Noticias">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="profile in profile" href="#/app/profile/{{profile.id}}">
+        {{profile.name}}
+        {{profile.email}}
+        {{profile.telep hone}}
+        {{profile.dni}}
+        {{profile.password}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
