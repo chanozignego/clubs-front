@@ -146,6 +146,38 @@ $scope.doChangepass = function() {
 };
 
 
+$scope.EditprofileData = {};
+
+
+$ionicModal.fromTemplateUrl('templates/editprofile.html', {
+  scope: $scope
+}).then(function(modalEditprofile) {
+  $scope.modalEditprofile = modalEditprofile;
+});
+
+
+$scope.closeEditprofile = function() {
+  $scope.modalEditprofile.hide();
+};
+
+
+$scope.editprofile = function() {
+  $scope.closeRegister();
+  $scope.closeLogin();
+  $scope.closeForgotpass();
+  $scope.modalEditprofile.show();
+};
+
+
+$scope.doEditprofile = function() {
+  console.log('Doing editprofile', $scope.editprofileData);
+
+  $timeout(function() {
+    $scope.closeEditprofile();
+  }, 1000);
+};
+
+
 
 
 

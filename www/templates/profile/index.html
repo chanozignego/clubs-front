@@ -1,13 +1,17 @@
-<ion-view view-title="Noticias">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="profile in profile" href="#/app/profile/{{profile.id}}">
-        {{profile.name}}
-        {{profile.email}}
-        {{profile.telephone}}
-        {{profile.dni}}
-        {{profile.password}}
-      </ion-item>
+<ion-view view-title="Perfil">
+  <ion-content style="width:80%;margin:0 auto;">
+    <div class="align-img"><img class="avatar" src="img/avatar.jpg" alt=""></div>
+      <ion-list class="">
+        <ion-item ng-click="" ng-repeat="profile in profile" >
+          <div ng-include src="'templates/profile/profileCard.html'"></div>
+        </ion-item>
+      </div>
     </ion-list>
+    <div class="reservation-button" style="padding-top:20px;">
+      <button class="button button-block button-positive" ng-click="editprofile()" type="submit">Editar perfil</button>
+    </div>
+    <div class="reservation-button">
+      <button class="button button-block button-assertive" ng-click="changepass()" type="submit">Actualizar contraseña</button>
+    </div>
   </ion-content>
 </ion-view>

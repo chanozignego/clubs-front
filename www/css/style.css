@@ -20,20 +20,27 @@
 .reservations-date{float: right;}
 .reservations-time{float: right;clear:right;padding-top: 20px;}
 .reservations-description{padding-top: 20px;}
+.reservation-button{width:48%;display:inline-block}
+@media (max-width:950px){.reservation-button{width: 100%;display: block}}
+
 
 /* reservation */
 .reserva-data{;padding-top:50px;width: 50%;margin: 0 auto;}
 .comment{width:50%;margin:0 auto;margin-top:50px;}
-@media (max-width:680px) { .reserva-data{width: 80%} .comment {width:80%}
-
-}
-
-
+@media (max-width:680px) { .reserva-data{width: 80%} .comment {width:80%}}
 @media (min-width:680px){.reservation:hover{opacity: 0.7;transition: 0.3s}.reservations-bookeable{display: inline-block}}
 
 
+/* profile */
+.avatar{border-radius:50%; object-fit:cover; width:400px; height:400px;margin: 0 auto;}
+.align-img{width: 400px;margin:0 auto;margin-top: 30px;margin-bottom: 30px;}
+@media (max-width:680px) { .avatar{width: 250px;height: 250px}.align-img{width: 250px}}
+@media (min-width:680px){.align-img img:hover {opacity: 0.8;transition: 1s}}
 
-
+.avatar-edit{border-radius:50%; object-fit:cover; width:300px; height:300px;margin: 0 auto;}
+.align-img-edit{width: 300px;margin:0 auto;margin-bottom: 30px;}
+@media (max-width:680px) { .avatar-edit{width: 250px;height: 250px}.align-img-edit{width: 250px}}
+@media (min-width:680px){.align-img-edit img:hover {opacity: 0.8;transition: 1s}}
 
 
 
