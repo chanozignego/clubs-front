@@ -1,5 +1,8 @@
 <ion-view view-title="Noticias">
   <ion-content>
+    <p>
+  <button ng-click="openPopover($event)">Open Popover</button>
+</p>
     <ion-list>
       <ion-item ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
         {{post.title}}

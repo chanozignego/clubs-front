@@ -1,26 +1,29 @@
 <ion-modal-view style="position:absolute;top:50px;bottom:50px;border-radius:10px;max-width:1000px;margin:0 auto">
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeEditprofile()" alt="">
   <ion-content style="width:80%;margin:0 auto;overflow:hidden;padding-top:30px;">
-    <div class="align-img-edit"><img class="avatar-edit" src="img/avatar.jpg" alt=""></div>
+    <label class="filebutton">
+      <div class="align-img-edit"><img class="avatar-edit" src="img/avatar.jpg" border="5" alt=""></div>
+    <span><input class="avatar-file" type="file" id="myfile" name="myfile"></span>
+    </label>
     <div style="margin-bottom:20px;"class="col-xs-12 text-center"><h4>
-      Editar perfil </h4></div>
+      Modifique los campos que desea actualizar. </h4></div>
     <form ng-submit="doEditprofile()">
       <div class="list">
         <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
           <span  class="input-label">Nombre</span>
-          <input type="text" ng-model="registerData.name" placeholder="{{profile.name}}" style="width:10%; margin:auto;font-weight:bold;">
+          <input type="text" ng-model="registerData.name" placeholder="Marcos Acuña" style="width:10%; margin:auto;font-weight:bold;">
         </label>
         <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
           <span  class="input-label">Email</span>
-          <input type="email" ng-model="registerData.email" placeholder="{{profile.email}}" style="width:10%; margin:auto;font-weight:bold;">
+          <input type="email" ng-model="registerData.email" placeholder="marcosacuña@gmail.com" style="width:10%; margin:auto;font-weight:bold;">
         </label>
         <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
           <span  class="input-label">Telefono</span>
-          <input type="text" ng-model="registerData.telephone" placeholder="{{profile.telephone}}" style="width:10%; margin:auto;font-weight:bold;">
+          <input type="text" ng-model="registerData.telephone" placeholder="+5491151064530" style="width:10%; margin:auto;font-weight:bold;">
         </label>
         <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
           <span  class="input-label">Dni</span>
-          <input type="text" ng-model="registerData.dni" placeholder="{{profile.dni}}" style="width:10%; margin:auto;font-weight:bold;">
+          <input type="text" ng-model="registerData.dni" placeholder="40670488" style="width:10%; margin:auto;font-weight:bold;">
         </label>
 
 
