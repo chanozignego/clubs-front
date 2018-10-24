@@ -1,5 +1,4 @@
-angular
-  .module('clubs-front')
+application
   .controller('UsefulDataController', function($scope) {
 
     $scope.contacts = [

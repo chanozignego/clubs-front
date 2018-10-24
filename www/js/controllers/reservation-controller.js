@@ -1,5 +1,4 @@
-angular
-  .module('clubs-front')
+application
   .controller('ReservationController', function($scope, $stateParams) {
     $scope.reservation = {
         id: 1,

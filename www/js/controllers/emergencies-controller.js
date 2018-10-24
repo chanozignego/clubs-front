@@ -1,5 +1,4 @@
-angular
-  .module('clubs-front')
+application
   .controller('EmergenciesController', function($scope) {
     $scope.emergencies = [
       { title: 'Llamar Policia', description: '911', id: 1 },

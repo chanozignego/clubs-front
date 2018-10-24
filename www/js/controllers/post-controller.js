@@ -1,5 +1,4 @@
-angular
-  .module('clubs-front')
+application
   .controller('PostController', function($scope, $stateParams) {
     $scope.post = {
         title: 'Vuelve Music & House',

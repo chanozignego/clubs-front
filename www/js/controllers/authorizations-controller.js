@@ -1,5 +1,4 @@
-angular
-  .module('clubs-front')
+application
   .controller('AuthorizationsController', function($scope) {
     $scope.posts = [
       { title: 'Vuelve Music & House', id: 1 },

@@ -29,3 +29,4 @@ angular
     });
   })
 
+var application = angular.module('clubs-front');
