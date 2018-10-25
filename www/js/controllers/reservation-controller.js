@@ -10,6 +10,7 @@ angular
         comments: 'comentario',
         description: 'Cancha 4',
         price: '250',
-        paymentform: 'Tarjeta terminada en 4221'
+        paymentform: 'Tarjeta terminada en 4221',
+        img:'img/tennis.png'
       };
   });
