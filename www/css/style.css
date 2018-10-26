@@ -2,7 +2,7 @@
 .avatar-navbar{position: absolute;z-index: 999;height: 45px;right:20px;width: 250px;border-top-right-radius:20px;border-bottom-right-radius:20px;  }
 .avatar-navbar:hover{opacity: 0.8;}
 .nav-avatar{border-radius:50%; object-fit:cover; width:38px; height:38px;margin:0 auto; position: absolute;z-index: 999;right: 3px;top:3px;}
-.avatar-text{position: absolute;z-index: 999;right: 60px;top: 11px;}
+.avatar-text{position: absolute;z-index: 999;right: 60px;top: 12px;}
 .dropdown-arrow{height: 15px;position: absolute;left: 140px;top:28px;opacity: 0.8}
 .dropdown-text .dropdown-arrow:hover{opacity: 1}
 .avatar-text {color: white;font-weight: bold;}
@@ -29,8 +29,8 @@
 /* reservations */
 .reservations-bookeable{font-weight: bold; display:inline-block;position: relative;top:-3px;}
 .reservations-date{float: right;clear:right;padding-top: 10px;font-weight: bold;margin-right: 7px}
-.reservations-time{float: right;clear:right;padding-top: 20px;}
-.reservations-description{padding-top: 20px;}
+.reservations-time{float: right;clear:right;padding-top: 17px;}
+.reservations-description{padding-top: 17px;}
 .reservation-button{width:48%;display:inline-block}
 @media (max-width:950px){.reservation-button{width: 100%;display: block}}
 
@@ -54,6 +54,9 @@
 @media (max-width:680px) { .avatar-edit{width: 250px;height: 250px}.align-img-edit{width: 250px}}
 @media (min-width:680px){.align-img-edit img:hover {opacity: 0.8;transition: 1s}}
 
+/* authorized */
+.authorized-data{display: inline-block;width: 49%;font-weight: bold}
+.authorized-info{display: inline-block;width: 49%}
 
 
 

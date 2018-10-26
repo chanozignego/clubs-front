@@ -178,8 +178,32 @@ $scope.doEditprofile = function() {
 };
 
 
+$scope.AddauthorizedData = {};
 
 
+$ionicModal.fromTemplateUrl('templates/addauthorized.html', {
+  scope: $scope
+}).then(function(modalAddauthorized) {
+  $scope.modalAddauthorized = modalAddauthorized;
+});
+
+
+$scope.closeAddauthorized = function() {
+  $scope.modalAddauthorized.hide();
+};
+
+
+$scope.addauthorized = function() {
+  $scope.modalAddauthorized.show();
+};
+
+$scope.doAddauthorized = function() {
+  console.log('Doing addauthorized', $scope.registerData);
+
+  $timeout(function() {
+    $scope.closeAddauthorized();
+  }, 1000);
+}
 
 
 
