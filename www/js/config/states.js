@@ -38,7 +38,7 @@ angular
         }
       }
     })
-    
+
     .state('app.usefulData', {
       url: '/useful_data',
       views: {
@@ -55,6 +55,16 @@ angular
         'menuContent': {
           templateUrl: 'templates/authorizations/index.html',
           controller: 'AuthorizationsController'
+        }
+      }
+    })
+
+    .state('app.authorized', {
+      url: '/authorizations/:authorizedId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/authorizations/show.html',
+          controller: 'AuthorizedController'
         }
       }
     })
