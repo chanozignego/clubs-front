@@ -16,6 +16,18 @@ application
         .then((res) => res.data);
     };
 
+    this.getEvents = () => {
+      return $http
+        .get(`${API}/events`)
+        .then((res) => res.data);
+    };
+
+    this.getEvent = (id) => {
+      return $http
+        .get(`${API}/events/${id}`)
+        .then((res) => res.data);
+    };
+
     // this.getPermittedPlaces = () => {
     //   return $http
     //     .get(`${API}/settings/places`)

@@ -82,7 +82,12 @@ application
         views: {
           'menuContent': {
             templateUrl: 'templates/events/index.html',
-            controller: 'EventsController'
+            controller: 'EventsController',
+            resolve: {
+                events: (Api) => {
+                  return Api.getEvents();
+                }
+              }
           }
         }
       })
@@ -91,7 +96,12 @@ application
         views: {
           'menuContent': {
             templateUrl: 'templates/events/show.html',
-            controller: 'EventController'
+            controller: 'EventController',
+            resolve: {
+                event: (Api, $stateParams) => {
+                  return Api.getEvent($stateParams.id);
+                }
+              }
           }
         }
       })
