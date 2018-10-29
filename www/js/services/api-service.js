@@ -10,6 +10,12 @@ application
         .then((res) => res.data);
     };
 
+    this.getPost = (id) => {
+      return $http
+        .get(`${API}/posts/${id}`)
+        .then((res) => res.data);
+    };
+
     // this.getPermittedPlaces = () => {
     //   return $http
     //     .get(`${API}/settings/places`)

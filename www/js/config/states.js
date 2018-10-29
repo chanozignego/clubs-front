@@ -28,7 +28,7 @@ application
         }
       })
       .state('app.emergency', {
-        url: '/emergencies/:emergencyId',
+        url: '/emergencies/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/emergencies/show.html',
@@ -68,7 +68,7 @@ application
       })
 
       .state('app.reservation', {
-        url: '/reservations/:reservationId',
+        url: '/reservations/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/reservations/show.html',
@@ -87,7 +87,7 @@ application
         }
       })
       .state('app.event', {
-        url: '/events/:postId',
+        url: '/events/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/events/show.html',
@@ -121,11 +121,16 @@ application
         }
       })
       .state('app.post', {
-        url: '/posts/:postId',
+        url: '/posts/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/posts/show.html',
-            controller: 'PostController'
+            controller: 'PostController',
+            resolve: {
+                post: (Api, $stateParams) => {
+                  return Api.getPost($stateParams.id);
+                }
+              }
           }
         }
       });
