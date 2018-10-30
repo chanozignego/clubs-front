@@ -118,6 +118,16 @@ angular
       }
     })
 
+    .state('app.service', {
+      url: '/services/:serviceId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/services/show.html',
+          controller: 'ServiceController'
+        }
+      }
+    })
+
     .state('app.posts', {
       url: '/posts',
       views: {

@@ -1,0 +1,10 @@
+<ion-view view-title="Servicio">
+  <ion-content>
+    <ion-icon name="call"></ion-icon>
+    <ion-list class="emergencies">
+      <ion-item class="emergency" ng-repeat="service in service" href="#/app/services/{{service.id}}">
+        <div ng-include src="'templates/services/serviceCard.html'"></div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

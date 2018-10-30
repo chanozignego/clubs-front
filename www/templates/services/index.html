@@ -1,8 +1,9 @@
 <ion-view view-title="Servicios">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
-        {{post.title}}
+      <ion-item class="reservation service" ng-repeat="service in services" href="#/app/services/{{service.id}}">
+         <img height="40px;" style="position:relative;top:4px;margin-right:10px;opacity:0.8" src="{{service.img}}" alt="">
+         <div class="services-text"style="position:absolute;left:80px;bottom:27px;"class="">{{service.title}}</div>
       </ion-item>
     </ion-list>
   </ion-content>

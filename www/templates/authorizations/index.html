@@ -1,14 +1,15 @@
 <ion-view view-title="Invitados">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="authorized in authorizeds" href="#/app/authorizations/{{authorization.id}}">
-        <i class="ion-call icon ion-ios-person" style="font-size: 40px;"></i>
-        <h2 style="display:inline-block;margin-left:10px;margin-bottom:4px;">{{authorized.name}}</h2>
-        <button style="position:absolute;right:10px;top:5px;width:100px;"class="button button-block button-assertive" ng-click="addauthorized()" type="submit">Eliminar</button>
-
+      <ion-item   ng-repeat="authorized in authorizeds" href="#/app/authorizations/{{authorization.id}}">
+        <div class="reservation">
+          <i class="ion-call icon ion-ios-person" style="font-size: 40px;"></i>
+          <h2 style="display:inline-block;margin-left:10px;margin-bottom:4px;">{{authorized.name}}</h2>
+        </div>
+        <button style="position:absolute;right:10px;top:2.5px;width:100px;"class="button button-block button-assertive" ng-click="addauthorized()" type="submit">Eliminar</button>
       </ion-item>
     </ion-list>
     <button style="width:50%;margin:0 auto;margin-top:30px;"class="button button-block button-positive" ng-click="addauthorized()" type="submit">Agregar Invitado</button>
-    <h5 style="width:50%;margin:0 auto;margin-top:10px;text-align:center">*recuerde que el máximo de invitados disponibles son 10.</h5>
+    <h5 style="width:50%;margin:0 auto;margin-top:10px;text-align:center;margin-bottom:30px">*recuerde que el máximo de invitados disponibles son 10.</h5>
   </ion-content>
 </ion-view>

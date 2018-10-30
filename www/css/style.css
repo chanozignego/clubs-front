@@ -3,8 +3,6 @@
 .avatar-navbar:hover{opacity: 0.8;}
 .nav-avatar{border-radius:50%; object-fit:cover; width:38px; height:38px;margin:0 auto; position: absolute;z-index: 999;right: 3px;top:3px;}
 .avatar-text{position: absolute;z-index: 999;right: 60px;top: 12px;}
-.dropdown-arrow{height: 15px;position: absolute;left: 140px;top:28px;opacity: 0.8}
-.dropdown-text .dropdown-arrow:hover{opacity: 1}
 .avatar-text {color: white;font-weight: bold;}
 @media (max-width:680px) {.avatar-text{display: none;}.avatar-navbar{width: 50px;}}
 
@@ -12,11 +10,11 @@
 /* Login-signup */
 .forgotpass{color: #20BFA9; position: relative; font-weight: 900;text-decoration: none;position:absolute;top:145px;right:50px}
 .remember{border-radius:15px;margin-bottom:15px;width:50%;}
-@media (max-width:1028px) { .forgotpass{top:195px;right: 25px;} .remember{width: 100%;margin-bottom: 40px;} }
-@media (max-width:680px){.close-form{display: none}}
 .email-sent{display:none}
 .close-form{float:right;margin:10px;}
 .close-form:hover{opacity: 0.4}
+@media (max-width:1028px) { .forgotpass{top:195px;right: 25px;} .remember{width: 100%;margin-bottom: 40px;} }
+@media (max-width:680px){.close-form{display: none}}
 
 
 /* emergencies */
@@ -60,6 +58,9 @@
 
 
 
+
+/* general */
+@media (min-width:680px){button:hover{opacity: 0.9;transition: 0.3s}}
 
 /* img to file input */
 

@@ -1,7 +1,27 @@
-<ion-view view-title="Evento">
-  <ion-content style="padding: 10px;">
-    <h4> {{event.date}} </h4>
-    <h2> {{event.title}} </h2>
-    <p> {{event.description}} </p>
+<ion-view view-title="Evento" >
+  <ion-content>
+    <div style="width:70%"class="reserva-data">
+      <h1 class="reservation-bookeable"><b>{{event.title}}</b></h1>
+      <img style="border-radius: 20px;object-fit:cover;width:100%;margin: 0 auto;"src="{{event.img}}" alt="">
+      <h4 style="padding-top:30px;margin-bottom:50px;"> {{event.description}} </p>
+        <h4> <b>Fecha:</b> {{event.date}}. </h4>
+      <h4> <b>Horario:</b> {{event.time}} Hs.</h4>
+      <h4> <b>Lugar:</b> {{event.place}}. </h4>
+      <h4> <b>Asistiran:</b> {{event.assist}} personas. </h4>
+    </div>
+
+    <form class="comment" style="margin-bottom:30px;">
+      <h3>Envíe una consulta:</h3>
+        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+          <textarea rows="4" cols="50" name="comments" form="usrform"></textarea>
+        </label>
+        <div class="reservation-button">
+          <button class="button button-block button-positive" ng-click="" type="submit">Enviar consulta</button>
+        </div>
+        <div class="reservation-button">
+          <button class="button button-block button-assertive" ng-click="" type="submit">Asistire al evento</button>
+        </div>
+    </form>
+
   </ion-content>
 </ion-view>
