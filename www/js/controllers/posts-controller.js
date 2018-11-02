@@ -2,11 +2,11 @@ angular
   .module('clubs-front')
   .controller('PostsController', function($scope) {
     $scope.posts = [
-      { title: 'Vuelve Music & House', id: 1 },
-      { title: 'Nuevo! Ampiación de proveduría', id: 2 },
-      { title: 'Recomendaciones para limpieza de tanques', id: 3 },
-      { title: 'La eficiencia energética', id: 4 },
-      { title: 'Golf: Torneo inter clubes', id: 5 },
-      { title: 'Tu vida sin bolsas de plástico', id: 6 }
+      { title: 'Vuelve Music & House', img: "img/recreacion.jpg",time:"19:30",date: "15/7/2018" ,description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.",id: 1 },
+      { title: 'Vuelve Music & House', img: "img/futbol.jpg",time:"19:30",date: "15/7/2018" ,id: 1 },
+      { title: 'Vuelve Music & House', img: "img/basket.jpg",time:"19:30",date: "15/7/2018" ,id: 1 },
+      { title: 'Vuelve Music & House', img: "img/adicciones.jpg",time:"19:30",date: "15/7/2018" ,id: 1 },
+      { title: 'Vuelve Music & House', img: "img/recreacion.jpg",time:"19:30",date: "15/7/2018" ,id: 1 },
+
     ];
   })
