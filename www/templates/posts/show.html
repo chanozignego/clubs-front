@@ -1,5 +1,26 @@
-<ion-view view-title="Noticia">
+<ion-view view-title="Noticia" >
   <ion-content>
-    <h1>Noticia</h1>
+    <h1 style="margin-top:40px;"class="single-post-title"><b>{{post.title}}</b></h1>
+    <h2 class="single-post-subtitle">{{post.subtitle}}</h2>
+      <div class="single-post">
+      <img class="single-post-img" src="{{post.img}}" alt="">
+      <h4 class="single-post-description"> {{post.description}} </h4>
+      <img class="single-post-img2" src="{{post.imgsec}}" alt="">
+    </div>
+
+    <div class="side-post">
+      <img class="post-add" src="{{post.add}}" alt="">
+      <ion-list>
+        <h2 style="font-size:20px;margin-top:20px;">Tambien te puede interesar:</h2>
+        <ion-item class="posts" ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
+          <div class="post">
+            <h1 class="post-text">{{post.title}}</h1>
+          </div>
+        </ion-item>
+      </ion-list>
+    </div>
+    <footer style="margin:50px auto 50px auto;width:80%">informacion obtenida de infobae.com</footer>
+
+
   </ion-content>
 </ion-view>

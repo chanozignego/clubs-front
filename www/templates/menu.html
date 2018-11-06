@@ -3,15 +3,12 @@
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
-      <div class="avatar-navbar">
+      <div  class="avatar-navbar">
+        <a menu-close href="#/app/profile">
           <span class="avatar-text">Marcos Acuña</span>
-          <div class="dropdown-text">
-            <img class="nav-avatar" src="img/avatar.jpg" alt="">
-            
-          </div>
-          <div class="dropdown-content">
-        </div>
-    </div>
+          <img class="nav-avatar" src="img/avatar.jpg" alt="">
+        </a>
+      </div>
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
@@ -36,17 +33,13 @@
          <!-- <i class="ion-home ion-icon"></i> -->
           Inicio
         </ion-item>
-        <ion-item menu-close href="#/app/emergencies">
-          <!-- <i class="ion-call ion-icon"></i> -->
-          Emergencias
-        </ion-item>
         <ion-item menu-close href="#/app/posts">
           <!-- <i class="ion-list-box ion-icon"></i> -->
           Noticias
         </ion-item>
-        <ion-item menu-close href="#/app/useful_data">
-          <!-- <i class="ion-information-circle ion-icon"></i> -->
-          Datos Útiles
+        <ion-item menu-close href="#/app/events">
+          <!-- <i class="ion-calendar ion-icon"></i> -->
+          Eventos
         </ion-item>
         <ion-item menu-close href="#/app/authorizations">
           <!-- <i class="ion-key ion-icon"></i> -->
@@ -56,17 +49,17 @@
           <!-- <i class="ion-bookmark ion-icon"></i> -->
           Reservas
         </ion-item>
-        <ion-item menu-close href="#/app/events">
-          <!-- <i class="ion-calendar ion-icon"></i> -->
-          Eventos
-        </ion-item>
         <ion-item menu-close href="#/app/services">
           <!-- <i class="ion-hammer ion-icon"></i> -->
           Guía de Servicios
         </ion-item>
-        <ion-item menu-close href="#/app/profile">
-          <!-- <i class="ion-close-circle ion-icon"></i> -->
-          Mi perfil
+        <ion-item menu-close href="#/app/useful_data">
+          <!-- <i class="ion-information-circle ion-icon"></i> -->
+          Datos Útiles
+        </ion-item>
+        <ion-item menu-close href="#/app/emergencies">
+          <!-- <i class="ion-call ion-icon"></i> -->
+          Emergencias
         </ion-item>
         <ion-item menu-close ng-click="login()">
           <!-- <i class="ion-close-circle ion-icon"></i> -->
