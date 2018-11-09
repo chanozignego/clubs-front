@@ -1,9 +1,64 @@
-<ion-view view-title="Inicio">
+<ion-view view-title="Simpit">
   <ion-content>
+    <img class="carousel" src="img/carousel1.jpeg" alt="">
     <ion-list>
-      <ion-item ng-repeat="post in posts" href="#/app/posts/{{post.id}}">
-        {{post.title}}
+      <ion-item class="homes" ng-repeat="home in home" href="#/app/{{home.go}}">
+        <div class="home">
+          <h1 class="home-text">{{home.title}}</h1>
+
+        </div>
       </ion-item>
     </ion-list>
+      <div class="home-paragraph">
+<span><b>SIMPIT ES UNICO POR SU VISIÓN</b></span>
+<br>
+DE PROYECTO SOCIAL DEPORTIVO.
+</br>
+<span><b>SIMPIT ES MAS QUE UN CLUB. ES UN ENCUENTRO.</b></span>
+      </div>
+      <img class="carousel" src="img/carousel2.jpeg" alt="">
+      <ion-list>
+
+        <ion-item class="home-items" href="#/app/useful_data" >
+          <div class="home">
+            <h1 class="home-item-text">Información útil del club</h1>
+          </div>
+        </ion-item>
+        <ion-item class="home-items" ng-click="addauthorized()">
+          <div class="home">
+            <h1 class="home-item-text">Autorizá un invitado</h1>
+          </div>
+        </ion-item>
+        <ion-item class="home-items" href="#/app/services" >
+          <div class="home">
+            <h1 class="home-item-text">Guía de Servicios</h1>
+          </div>
+        </ion-item>
+        <ion-item class="home-items" href="#/app/emergencies">
+          <div class="home">
+            <h1 class="home-item-text">Emergencias</h1>
+          </div>
+        </ion-item>
+        <ion-item class="home-items" href="#/app/reservations" >
+          <div class="home">
+            <h1 class="home-item-text">Mis reservas</h1>
+          </div>
+        </ion-item>
+        <ion-item class="home-items" ng-click="login()">
+          <div class="home">
+            <h1 class="home-item-text">Hacer una reserva</h1>
+          </div>
+        </ion-item>
+      </ion-list>
+      <footer>
+      <div class="home-paragraph">
+<span></span>
+<br>
+SIMPIT
+</br>
+<span><b></b></span>
+      </div>
+      </footer>
+
   </ion-content>
 </ion-view>

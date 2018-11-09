@@ -1,3 +1,16 @@
+/* home */
+.carousel{width: 100%;min-height: 300px;}
+.home-paragraph{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; padding: 100px 0; line-height: 28px; margin-top:0; padding: 60px;}
+.homes .item-content{padding: 0;margin-top: 0px}
+.home-text{font-weight: bold; font-size: 1.5rem;text-align: center;padding-top: 25px;padding-bottom: 252px;margin-top: 0;}
+.home-item-text{font-weight: bold; font-size: 1.5rem;text-align: center;padding-top: 25px;padding-bottom: 20px;margin-top: 0;}
+.home-text{display: block; padding:70px;width: 99%;margin: 0;}
+
+@media (min-width:768px){.homes:hover{opacity: 0.8;transition: 0.5s}.home-items{width: 50%;display: inline-block;border:none}}
+@media (min-width:760px) {.homes{width: 50%;display: inline-flex;border:none}}
+@media (max-width:768px) {.home-text{padding-top: 70px;padding-left:10px;padding-right: 10px}.home-item-text{}}
+
+}
 /* navbar */
 .avatar-navbar{position: absolute;z-index: 999;height: 45px;right:20px;width: 250px;border-top-right-radius:20px;border-bottom-right-radius:20px;  }
 .avatar-navbar:hover{opacity: 0.8;}
@@ -58,7 +71,7 @@
 @media (max-width:350px) {.authorized-name{max-width: 150px;}}
 
 /* post */
-.single-post-title{text-align:center;padding-bottom:60px;}
+.single-post-title{text-align:center;padding-bottom:60px;padding-top:40px;}
 .side-post{display:none}
 .side-post img {object-fit:cover;height: 200px;width: 100%}
 .single-post-subtitle{font-size: 20px;font-weight: 100;font-style: italic;text-align: center;margin-top: -50px;margin-bottom:30px;color:#808080}
@@ -88,7 +101,7 @@
 .event-date-img{left:15px}
 @media (min-width:768px){.events:hover{opacity: 0.8;transition: 0.5s}}
 @media (min-width:760px) {.events{width: 50%;display: inline-flex;padding: 50px;border:none}.event-img{border-radius:10px}}
-@media (max-width:425px) {.single-post-title{font-size: 25px}.single-event-title{font-size: 25px} .single-event{width: 90%}}
+@media (max-width:425px) {.single-post-title{font-size: 25px;padding-top: 25px;}.single-event-title{font-size: 25px} .single-event{width: 90%}}
 
 }
 }

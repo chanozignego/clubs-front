@@ -8,8 +8,6 @@ angular
       { name: 'Carlos Wolsky', date_in:'15/10/18', id: 1 },
       { name: 'Diego Martinez', date_in:'15/10/18', id: 1 },
       { name: 'Nicolas Sanchez', date_in:'15/10/18', id: 1 },
-      { name: 'Santiago Modal', date_in:'15/10/18', id: 1 },
-      { name: 'Diego Manfrin', date_in:'15/10/18', id: 1 },
 
 
 
