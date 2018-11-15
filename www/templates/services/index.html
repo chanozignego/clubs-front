@@ -1,10 +1,31 @@
 <ion-view view-title="Servicios">
   <ion-content>
+    <div class="conteiner">
+
     <ion-list>
       <ion-item class="reservation service" ng-repeat="service in services" href="#/app/services/{{service.id}}">
          <img height="40px;" style="position:relative;top:4px;margin-right:10px;opacity:0.8" src="{{service.img}}" alt="">
          <div class="services-text"style="position:absolute;left:80px;bottom:27px;"class="">{{service.title}}</div>
       </ion-item>
     </ion-list>
+  </div>
   </ion-content>
 </ion-view>
+
+
+<!--<ion-view view-title="Servicios">
+  <ion-content>
+    <div style="margin-left:0"class="single-post">
+    <ion-list>
+      <ion-item class="reservation service" ng-repeat="service in services" href="#/app/services/{{service.id}}">
+         <img height="40px;" style="position:relative;top:4px;margin-right:10px;opacity:0.8" src="{{service.img}}" alt="">
+         <div class="services-text"style="position:absolute;left:80px;bottom:27px;"class="">{{service.title}}</div>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div style="margin-left:0;"class="side-post">
+    <img src="img/swissmedical.jpg" alt="">
+    <img style="object-fit:scale-down"src="img/osde.jpeg" alt="">
+  </div>
+  </ion-content>
+</ion-view>-->
