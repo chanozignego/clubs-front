@@ -26,6 +26,7 @@ application
     // Open the login modal
     $scope.login = function() {
       $scope.closeRegister();
+      $scope.closeChangepass();
       $scope.closeForgotpass();
       $scope.modalLogin.show();
     };
@@ -82,13 +83,13 @@ application
       $scope.modalForgotpass = modalForgotpass;
     });
 
-
     $scope.closeForgotpass = function() {
       $scope.modalForgotpass.hide();
     };
 
     $scope.forgotpass = function() {
       $scope.closeRegister();
+      $scope.closeChangepass();
       $scope.closeLogin();
       $scope.modalForgotpass.show();
     };
@@ -100,4 +101,98 @@ application
         $scope.closeForgotpass();
       }, 1000);
     };
-})
+
+
+
+
+    $scope.ChangepassData = {};
+
+
+    $ionicModal.fromTemplateUrl('templates/changepass.html', {
+      scope: $scope
+    }).then(function(modalChangepass) {
+      $scope.modalChangepass = modalChangepass;
+    });
+
+
+    $scope.closeChangepass = function() {
+      $scope.modalChangepass.hide();
+    };
+
+
+    $scope.changepass = function() {
+      $scope.closeRegister();
+      $scope.closeLogin();
+      $scope.closeForgotpass();
+      $scope.modalChangepass.show();
+    };
+
+
+    $scope.doChangepass = function() {
+      console.log('Doing changepass', $scope.changepassData);
+
+      $timeout(function() {
+        $scope.closeChangepass();
+      }, 1000);
+    };
+
+
+    $scope.EditprofileData = {};
+
+
+    $ionicModal.fromTemplateUrl('templates/editprofile.html', {
+      scope: $scope
+    }).then(function(modalEditprofile) {
+      $scope.modalEditprofile = modalEditprofile;
+    });
+
+
+    $scope.closeEditprofile = function() {
+      $scope.modalEditprofile.hide();
+    };
+
+
+    $scope.editprofile = function() {
+      $scope.closeRegister();
+      $scope.closeLogin();
+      $scope.closeForgotpass();
+      $scope.modalEditprofile.show();
+    };
+
+
+    $scope.doEditprofile = function() {
+      console.log('Doing editprofile', $scope.editprofileData);
+
+      $timeout(function() {
+        $scope.closeEditprofile();
+      }, 1000);
+    };
+
+
+    $scope.AddauthorizedData = {};
+
+
+    $ionicModal.fromTemplateUrl('templates/addauthorized.html', {
+      scope: $scope
+    }).then(function(modalAddauthorized) {
+      $scope.modalAddauthorized = modalAddauthorized;
+    });
+
+
+    $scope.closeAddauthorized = function() {
+      $scope.modalAddauthorized.hide();
+    };
+
+
+    $scope.addauthorized = function() {
+      $scope.modalAddauthorized.show();
+    };
+
+    $scope.doAddauthorized = function() {
+      console.log('Doing addauthorized', $scope.registerData);
+
+      $timeout(function() {
+        $scope.closeAddauthorized();
+      }, 1000);
+    }
+  })

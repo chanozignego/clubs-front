@@ -1,8 +1,17 @@
 <ion-view view-title="Eventos">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="event in events" href="#/app/events/{{event.id}}">
-        {{event.formatted_date}} - {{event.name}}
+      <ion-item class="events" ng-repeat="event in events" href="#/app/events/{{event.id}}">
+        <div class="event">
+          <h1 class="event-text">{{event.name}}</h1>
+          <img class="event-img" src="{{event.image}}" alt="">
+          <!-- <h2 class="event-date">{{event.date}}</h2>
+          <img class="event-date-img" src="img/date.png" height="25px" alt="">
+          <h2 class="event-time">{{event.time}}</h2>
+          <img class="event-time-img" src="img/time.png" height="25px" alt=""> -->
+          <h2 class="event-date">{{event.formatted_date}}</h2>
+          <img class="event-date-img" src="img/date.png" height="25px" alt="">
+        </div>
       </ion-item>
     </ion-list>
   </ion-content>

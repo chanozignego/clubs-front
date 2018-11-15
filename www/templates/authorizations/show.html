@@ -1,0 +1,31 @@
+<ion-view view-title="Invitado">
+  <ion-content style="width:80%;margin:0 auto;">
+
+    <label>
+      <div class="align-img"><img class="avatar" src="img/guest.jpg" alt=""></div>
+    <span><input class="avatar-file" type="file" id="myfile" name="myfile"></span>
+    </label>
+
+    <ion-list class="">
+      <ion-item ng-click="">
+        <h2><b>Invitado: </b> {{authorized.name}}</h2>
+      </ion-item>
+      <ion-item ng-click="">
+        <h2><b>Telefono: </b>{{authorized.telephone}}</h2>
+      </ion-item>
+      <ion-item ng-click="">
+        <h2><b>Dni: </b>{{authorized.dni}}</h2>
+      </ion-item>
+      <ion-item ng-click="">
+        <h2><b>Fecha Ingreso: </b>{{authorized.date_in}}</h2>
+      </ion-item>
+    </div>
+  </ion-list>
+    <div class="reservation-button" style="padding-top:20px;">
+      <button class="button button-block button-positive" ng-click="" type="submit">Editar información</button>
+    </div>
+    <div class="reservation-button">
+      <button class="button button-block button-assertive" ng-click="" type="submit">Eliminar invitado</button>
+    </div>
+  </ion-content>
+</ion-view>

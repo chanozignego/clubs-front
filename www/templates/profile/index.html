@@ -1,0 +1,22 @@
+<ion-view view-title="Perfil">
+  <ion-content style="width:80%;margin:0 auto;">
+
+    <label>
+      <div class="align-img"><img class="avatar" src="img/avatar.jpg" alt=""></div>
+    <span><input class="avatar-file" type="file" id="myfile" name="myfile"></span>
+    </label>
+
+      <ion-list class="">
+        <ion-item ng-click="" ng-repeat="profile in profile" >
+          <div ng-include src="'templates/profile/profileCard.html'"></div>
+        </ion-item>
+      </div>
+    </ion-list>
+    <div class="reservation-button" style="padding-top:20px;">
+      <button class="button button-block button-positive" ng-click="editprofile()" type="submit">Editar perfil</button>
+    </div>
+    <div style="margin-bottom:80px"class="reservation-button">
+      <button class="button button-block button-assertive" ng-click="changepass()" type="submit">Actualizar contraseña</button>
+    </div>
+  </ion-content>
+</ion-view>

@@ -2,8 +2,9 @@ application
   .service('Api', function($http) { //CONFIG
 
     //const API = `${CONFIG.clubs.api_url}`;
-    //const API = "http://192.168.0.19:3000/api/v1"
-    const API = "http://clubs.simpit.co/api/v1"
+    // const API = "http://192.168.0.19:3000/api/v1"
+    const API = "http://192.168.1.11:3000/api/v1"
+    // const API = "http://clubs.simpit.co/api/v1"
 
     this.getPosts = () => {
       return $http

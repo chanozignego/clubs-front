@@ -1,11 +1,14 @@
 application
   .controller('AuthorizationsController', function($scope) {
-    $scope.posts = [
-      { title: 'Vuelve Music & House', id: 1 },
-      { title: 'Nuevo! Ampiación de proveduría', id: 2 },
-      { title: 'Recomendaciones para limpieza de tanques', id: 3 },
-      { title: 'La eficiencia energética', id: 4 },
-      { title: 'Golf: Torneo inter clubes', id: 5 },
-      { title: 'Tu vida sin bolsas de plástico', id: 6 }
+    $scope.authorizeds = [
+      { name: 'Nicolas Dominguez', date_in:'15/10/18', id: 1 },
+      { name: 'Nahitan Marin', date_in:'15/10/18', id: 1 },
+      { name: 'Martin Perez', date_in:'15/10/18', id: 1 },
+      { name: 'Carlos Wolsky', date_in:'15/10/18', id: 1 },
+      { name: 'Diego Martinez', date_in:'15/10/18', id: 1 },
+      { name: 'Nicolas Sanchez', date_in:'15/10/18', id: 1 },
+
+
+
     ];
   })

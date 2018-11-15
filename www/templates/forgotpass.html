@@ -2,16 +2,16 @@
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeForgotpass()" alt="">
   <ion-content style="width:80%;margin:0 auto;overflow:hidden;">
     <img src="img/simpit-logo.png" height="130" style="display:block; margin:auto;margin-top:30px;">
-    <div style="margin-bottom:40px;"class="col-xs-12 text-center"><h4>
-      Para recuperar tu contraseña ingresa el e-mail con el cual te registraste.</h4></div>
+    <div style="margin-bottom:40px;"class="col-xs-12 text-center"><h4>    
+Para recuperar tu contraseña ingresa el e-mail con el cual te registraste.</h4></div>
     <form ng-submit="doforgotpass()">
-      <div class="list">
-        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+      <div class="list" style="padding: 5px;">
+        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px; padding-right: 20px; padding-left: 20px;">
           <input type="email" style="text-align:center" ng-model="forgotpassData.email" placeholder="Ingrese el Email de recuperacion" style="width:10%;font-weight:bold;">
         </label>
 
+        <button class="button button-block button-positive" ng-click="" type="submit">Enviar</button>
       </div>
-      <button class="button button-block button-positive" ng-click="" style="width:300px;margin:0 auto;"type="submit">Enviar</button>
     </form>
 
   </ion-content>

@@ -57,6 +57,16 @@ application
         }
       })
 
+      .state('app.authorized', {
+        url: '/authorizations/:authorizedId',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/authorizations/show.html',
+            controller: 'AuthorizedController'
+          }
+        }
+      })
+
       .state('app.reservations', {
         url: '/reservations',
         views: {
@@ -116,6 +126,16 @@ application
         }
       })
 
+      .state('app.service', {
+        url: '/services/:serviceId',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/services/show.html',
+            controller: 'ServiceController'
+          }
+        }
+      })
+
       .state('app.posts', {
         url: '/posts',
         views: {
@@ -130,6 +150,7 @@ application
           }
         }
       })
+
       .state('app.post', {
         url: '/posts/:id',
         views: {
@@ -140,12 +161,23 @@ application
                 post: (Api, $stateParams) => {
                   return Api.getPost($stateParams.id);
                 }
-              }
+            }
           }
         }
-      });
+      })
+
+      .state('app.profile', {
+        url: '/profile',
+        views: {
+          'menuContent': {
+            templateUrl: 'templates/profile/index.html',
+            controller: 'ProfileController'
+          }
+        }
+      })
 
 
-    // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/home');
-  });
+      // if none of the above states are matched, use this as the fallback
+      $urlRouterProvider.otherwise('/app/home');
+
+    });

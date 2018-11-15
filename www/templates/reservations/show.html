@@ -1,8 +1,26 @@
-<ion-view view-title="Reserva">
-  <ion-content style="padding: 10px;">
-    <h2> {{reservation.bookeable}} </h2>
-    <h4> {{reservation.date}} </h4>
-    <h4> {{reservation.time}} </h4>
-    <p> {{reservation.description}} </p>
+<ion-view view-title="Reserva" >
+  <ion-content>
+    <div class="reserva-data">
+      <h1 class="reservation-bookeable" >{{reservation.bookeable}}</h1>
+      <h4 style="padding-top:30px;"> <b>Datos adicionales:</b> {{reservation.description}} </p>
+      <h4> <b>Fecha:</b> {{reservation.date}} </h4>
+      <h4> <b>Horario:</b> {{reservation.time}} </h4>
+      <h4> <b>Tiempo de uso disponible:</b> {{reservation.time_used}}</h4>
+      <h4> <b>Forma de pago:</b> {{reservation.paymentform}}</h4>
+    </div>
+
+    <form class="comment">
+      <h3>Deje su comentario:</h3>
+        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+          <textarea rows="4" cols="50" name="comments" form="usrform"></textarea>
+        </label>
+        <div class="reservation-button">
+          <button class="button button-block button-positive" ng-click="" type="submit">Enviar comentario</button>
+        </div>
+        <div class="reservation-button">
+          <button class="button button-block button-assertive" ng-click="" type="submit">Pedir Cancelación del turno</button>
+        </div>
+    </form>
+
   </ion-content>
 </ion-view>
