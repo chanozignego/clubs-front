@@ -112,13 +112,12 @@
 @media (min-width:768px){button:hover{opacity: 0.8;transition: 0.3s}.onhover:hover{opacity: 0.8;transition: 0.3s}}
 .item-content p{white-space: normal;}
 .item-content h1{white-space: normal;}
-.bar.bar-stable{background-color: #993333;height: 52px}
+.bar.bar-stable{background-color: #993333;height: 51px}
 .header-item{font-weight: bold}
 .bar.bar-stable{border:#993333}
-.scroll{margin-top:7px}
-.scroll .usefulData{margin-top:0px;}
 .ion-content{top:42px;}
 .ion-content .useful-content{top:42px;}
+.tab-nav.tabs{margin-top: 6px;}
 
 /* img to file input */
 
