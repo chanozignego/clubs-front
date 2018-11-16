@@ -29,6 +29,15 @@ angular
         }
       }
     })
+    .state('app.live', {
+      url: '/live',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/live/index.html',
+          controller: 'LiveController'
+        }
+      }
+    })
     .state('app.emergency', {
       url: '/emergencies/:emergencyId',
       views: {

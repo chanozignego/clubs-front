@@ -1,6 +1,6 @@
 <ion-view view-title="Club Newman">
 
-  <ion-content style="margin-top:6px">
+  <ion-content overflow-scroll="true" style=";background-color: #">
     <img class="carousel" src="img/carousel1.jpeg" alt="">
     <ion-list>
       <ion-item class="home-items" ng-repeat="home in home" href="#/app/{{home.go}}">
@@ -11,51 +11,45 @@
       </ion-item>
     </ion-list>
       <div class="home-paragraph">
-<span><b>NEWMAN ES UNICO POR SU VISIÓN</b></span>
+<span><b>El CLUB ES UNICO POR SU VISIÓN</b></span>
 <br>
 DE PROYECTO SOCIAL DEPORTIVO.
 </br>
 <span><b>NEWMAN ES MAS QUE UN CLUB. ES UN ENCUENTRO.</b></span>
       </div>
-      <img class="carousel" src="img/carousel2.jpeg" alt="">
-      <ion-list>
 
-        <ion-item class="home-items" href="#/app/useful_data" >
-          <div class="home">
-            <h1 class="home-item-text">Información útil del club</h1>
-          </div>
+      <ion-list>
+        <ion-item class="home-button" href="#/app/useful_data" >
+            <i class="ion-information-circled" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Datos utiles</h3>
         </ion-item>
-        <ion-item class="home-items" ng-click="addauthorized()">
-          <div class="home">
-            <h1 class="home-item-text">Autorizá un invitado</h1>
-          </div>
+        <ion-item class="home-button" href="#/app/services" >
+            <i class="ion-person-add" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Autorizar</h3>
         </ion-item>
-        <ion-item class="home-items" href="#/app/services" >
-          <div class="home">
-            <h1 class="home-item-text">Guía de Servicios</h1>
-          </div>
+        <ion-item class="home-button" href="#/app/services" >
+            <i class="ion-hammer" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Servicios</h3>
         </ion-item>
-        <ion-item class="home-items" href="#/app/emergencies">
-          <div class="home">
-            <h1 class="home-item-text">Emergencias</h1>
-          </div>
+        <ion-item class="home-button" href="#/app/emergencies">
+            <i class="ion-ios-medkit" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Emergencias</h3>
         </ion-item>
-        <ion-item class="home-items" href="#/app/reservations" >
-          <div class="home">
-            <h1 class="home-item-text">Mis reservas</h1>
-          </div>
+        <ion-item class="home-button" href="#/app/reservations" >
+            <i class="ion-ios-stopwatch" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Reservas</h3>
         </ion-item>
-        <ion-item class="home-items" ng-click="login()">
-          <div class="home">
-            <h1 class="home-item-text">Hacer una reserva</h1>
-          </div>
+        <ion-item class="home-button" href="#/app/profile" >
+            <i class="ion-person" style="font-size: 40px;"></i>
+            <h3 class="icon-text">Perfil</h3>
         </ion-item>
       </ion-list>
       <footer>
-      <div class="home-paragraph">
+      <div class="home-sponsors">
 <span></span>
-<br>
-SIMPIT
+<h3 class="sponsors">Nuestros sponsors:</h3>
+
+<img class="sponsors-img" src="img/sponsors.png" alt="">
 </br>
 <span><b></b></span>
       </div>

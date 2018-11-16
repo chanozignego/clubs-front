@@ -28,7 +28,7 @@ $positive:                         #387ef5 !default;
 $calm:                             #11c1f3 !default;
 $balanced:                         #33cd5f !default;
 $energized:                        #ffc900 !default;
-$assertive:                        #ef473a !default;
+$assertive:                        #993333 !default;
 $royal:                            #886aea !default;
 $dark:                             #444 !default;
 
@@ -180,8 +180,9 @@ $button-default-active-border:    $button-stable-active-border !default;
 // Bars
 // -------------------------------
 
-$bar-height:                      44px !default;
+$bar-height:                      52px !default;
 $bar-title-font-size:             17px !default;
+$bar-title-font-weight:           900 !default;
 $bar-padding-portrait:            5px !default;
 $bar-padding-landscape:           5px !default;
 $bar-transparency:                1 !default;

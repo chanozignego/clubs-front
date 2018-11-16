@@ -1,14 +1,19 @@
 /* home */
 .home-logo{position: absolute;z-index: 999;top:5px;left:50vh}
-.carousel{width: 100%;min-height: 300px;}
+.carousel{width: 100%;min-height: 300px;max-height: 55vh}
 .home-paragraph{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 60px;}
-.homes .item-content{padding: 0;margin-top: 0px}
+.home-button{width:16.5%;display: inline-block}
+.home-button i{margin-left: 50%}
+.icon-text{font-weight: bold;text-align: center;padding-left: 30px;padding-top: 15px}
 .home-text{font-weight: bold; font-size: 1.5rem;text-align: center;padding-top: 25px;padding-bottom: 252px;margin-top: 0;}
-.home-item-text{font-weight: bold; font-size: 1.8rem;text-align: center;padding-top: 25px;padding-bottom: 25px;margin-top: 0;}
+.home-item-text{font-weight: bold; font-size: 1.8rem;text-align: center;padding-top: 25px;padding-bottom: 25px;margin-top: 0;margin-left: 10px}
 .home-text{display: block; padding:70px;width: 99%;margin: 0;}
-@media (min-width:768px){.home-item-text:hover{opacity: 0.6;transition: 0.3s}.home-items{width: 50%;display: inline-block;border:none}}
-@media (max-width:768px) {.home-item-text{font-size:1.3rem;padding-top:15px;padding-bottom: 15px}.home-paragraph{font-size: 20px;padding: 50px 0;}}
-
+.sponsors{color: #808080;font-size: 20px}
+.sponsors-img{width: 100%;max-width: 700px}
+@media (max-width:1150px) {.home-button{width:33%}}
+@media (min-width:768px){.home-item-text:hover{opacity: 0.6;transition: 0.3s}.home-items{box-sizing:border-box; width: 48%;display: inline-block;border:2px solid #b3b3b3;border-radius: 10px;max-height: 20vh;margin:0 1%}}
+@media (max-width:768px) {.sponsors{font-size: 15px}.icon-text{display:none} .home-item-text{font-size:1.3rem;padding-top:15px;padding-bottom: 15px}.home-paragraph{font-size: 20px;padding: 50px 0;}}
+.home-sponsors{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 20px;}
 
 /* navbar */
 .avatar-navbar{position: absolute;z-index: 999;height: 45px;right:20px;top:4px; ;width: 250px;border-top-right-radius:20px;border-bottom-right-radius:20px;  }
@@ -110,18 +115,21 @@
 @media (min-width:760px) {.events{width: 50%;display: inline-flex;padding: 50px;border:none}.event-img{border-radius:10px}}
 @media (max-width:425px) {.single-post-title{font-size: 25px;padding-top: 25px;}.single-event-title{font-size: 25px} .single-event{width: 90%}}
 
+/* live */
+.live-title{font-size: 60px;text-align: center;padding-top: 60px;padding-bottom: 50px}
+.live{width: 80%;margin: 0 auto;}
 
 /* general */
 @media (min-width:768px){button:hover{opacity: 0.8;transition: 0.3s}.onhover:hover{opacity: 0.8;transition: 0.3s}}
 .item-content p{white-space: normal;}
 .item-content h1{white-space: normal;}
-.bar.bar-stable{background-color: #993333;height: 51px}
+.bar.bar-stable{background-color: #993333}
 .header-item{font-weight: bold}
 .bar.bar-stable{border:#993333}
 .ion-content{top:42px;}
 .ion-content .useful-content{top:42px;}
-.tab-nav.tabs{margin-top: 6px;}
-@media (min-width:768px) {.conteiner{padding:20px 200px 0px 200px;background-color: #e6e6e6;height: 100vh}}
+
+@media (min-width:768px) {.conteiner{padding: 0px 300px 0px 200px;background-color: #e6e6e6;height: 100vh}}
 
 
 /* img to file input */
