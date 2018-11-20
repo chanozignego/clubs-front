@@ -1,19 +1,26 @@
 /* home */
+.add-mobile {width: 100%;margin: -5px 0}
 .home-logo{position: absolute;z-index: 999;top:5px;left:50vh}
-.carousel{width: 100%;min-height: 300px;max-height: 55vh}
+.carousel1{width: 100%;min-height: 300px;max-height: 65vh}
+.carousel2{width: 100%;min-height: 300px;max-height: 65vh}
 .home-paragraph{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 60px;}
 .home-button{width:16.5%;display: inline-block}
 .home-button i{margin-left: 50%}
+.home-button-first{width:33%;display: inline-block;padding-top: 10px;padding-bottom: 10px}
+.home-button-first i{margin-left: 50%}
+.live-container{display: flex;justify-content: space-between;}
 .icon-text{font-weight: bold;text-align: center;padding-left: 30px;padding-top: 15px}
 .home-text{font-weight: bold; font-size: 1.5rem;text-align: center;padding-top: 25px;padding-bottom: 252px;margin-top: 0;}
 .home-item-text{font-weight: bold; font-size: 1.8rem;text-align: center;padding-top: 25px;padding-bottom: 25px;margin-top: 0;margin-left: 10px}
 .home-text{display: block; padding:70px;width: 99%;margin: 0;}
 .sponsors{color: #808080;font-size: 20px}
 .sponsors-img{width: 100%;max-width: 700px}
-@media (max-width:1150px) {.home-button{width:33%}}
-@media (min-width:768px){.home-item-text:hover{opacity: 0.6;transition: 0.3s}.home-items{box-sizing:border-box; width: 48%;display: inline-block;border:2px solid #b3b3b3;border-radius: 10px;max-height: 20vh;margin:0 1%}}
-@media (max-width:768px) {.sponsors{font-size: 15px}.icon-text{display:none} .home-item-text{font-size:1.3rem;padding-top:15px;padding-bottom: 15px}.home-paragraph{font-size: 20px;padding: 50px 0;}}
 .home-sponsors{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 20px;}
+@media (max-width:1024px) {.live-container{display: none}}
+@media (max-width:1150px) {.home-button{width:33%}.home-button-first{width:33%}}
+@media (min-width:768px){.add-mobile{display:none}.carousel2{display:none}.home-item-text:hover{opacity: 0.6;transition: 0.3s}.home-items{box-sizing:border-box; width: 48%;display: inline-block;border:2px solid #b3b3b3;border-radius: 10px;max-height: 20vh;margin:0 1%}}
+@media (max-width:767px) {.carousel1{display:none}.sponsors{font-size: 15px}.icon-text{display:none} .home-item-text{font-size:1.3rem;padding-top:15px;padding-bottom: 15px}}
+@media (max-width:500px) {.home-paragraph{background-color: #18181a; color:#ddd; font-size: 17px; font-weight: 100; text-align: center; line-height: 23px; margin-top:0;padding: 25px 15px;}}
 
 /* navbar */
 .avatar-navbar{position: absolute;z-index: 999;height: 45px;right:20px;top:4px; ;width: 250px;border-top-right-radius:20px;border-bottom-right-radius:20px;  }
@@ -32,10 +39,11 @@
 .close-form:hover{opacity: 0.4}
 .log-reg{position:absolute;top:52px;bottom:50px;max-width:800px;margin:0 auto;}
 .log-reg-form{width:98%;margin:0 auto;overflow:hidden;padding-top:30px;}
+.log-img{height: 140px}
 @media (max-width:1028px) { .forgotpass{top:195px;right: 25px;} .remember{width: 100%;margin-bottom: 40px;} }
 @media (min-width:375px) {.log-reg-form{width:90%}}
 @media (min-width:680px) {.log-reg{border-radius: 10px;}.log-reg-form{width:80%}}
-
+@media (max-width:425px) {.log-img{height: 100px}}
 /* emergencies */
 .emergency{font-weight: bold;}
 .secondary-info{padding-top: 20px;font-weight: normal;}
@@ -116,8 +124,14 @@
 @media (max-width:425px) {.single-post-title{font-size: 25px;padding-top: 25px;}.single-event-title{font-size: 25px} .single-event{width: 90%}}
 
 /* live */
-.live-title{font-size: 60px;text-align: center;padding-top: 60px;padding-bottom: 50px}
-.live{width: 80%;margin: 0 auto;}
+.live-title{font-size: 60px;text-align: center;padding-top: 40px;padding-bottom: 70px}
+.live-social{margin-top:0px;max-width: 800px}
+.live{width: 60%;margin-left: 20%;margin-bottom: 30px}
+.social{width:49%}
+.social-buttons{display:none}
+@media (max-width:1024px) {.live-title-mobile{display: inline-block}}
+@media (max-width:768px) {.social-buttons{display:block;position: fixed;left: 7px;bottom: -5px;    right: 0;}.live-buttons{display:block}.live{width: 90%;margin-left: 5%} .social{display:none}.live-title{font-size: 30px;padding-top: 20px;padding-bottom: 10px}}
+
 
 /* general */
 @media (min-width:768px){button:hover{opacity: 0.8;transition: 0.3s}.onhover:hover{opacity: 0.8;transition: 0.3s}}

@@ -1,9 +1,10 @@
 <ion-modal-view class="log-reg">
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeLogin()" alt="">
-  <ion-content class="log-reg-form">
-    <img src="img/simpit-logo.png" height="140" style="display:block; margin:auto;margin-bottom:30px;">
-    <div style="margin-bottom:20px;"class="col-xs-12 text-center"><h4>
-      Bienvenido a la plataforma del <b>Club Newman</b>, ingresa tu Email y contraseña para continuar.</h4></div>
+  <ion-content content scroll="false" class="log-reg-form">
+    <img src="img/simpit-logo.png" class="log-img" style="display:block; margin:auto;margin-bottom:30px;">
+    <div class="col-xs-12 text-center"><h4>
+      Bienvenido a la plataforma del <b>Club Newman</b>, ingresa tu Email y contraseña para continuar.</h4>
+    </div>
     <form ng-submit="doLogin()">
       <div class="list" style="padding: 5px;">
         <label class="item item-input" style="border-radius: 15px;margin-bottom:15px; padding-right: 20px; padding-left: 20px;">
@@ -20,7 +21,7 @@
       </div>
     </form>
     <footer>
-      <div style="margin-top:10px;margin-bottom:15px;" class="col-xs-12 text-center">
+      <div style="margin-top:10px;margin-bottom:100px;" class="col-xs-12 text-center">
         ¿Todavía no estas registrado?
         <a href="" ng-click="register()" style="color:#993333; margin-left: 10px; font-weight: 900;text-decoration: none;">
           REGISTRARME

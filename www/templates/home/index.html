@@ -1,15 +1,28 @@
 <ion-view view-title="Club Newman">
 
   <ion-content overflow-scroll="true" style=";background-color: #">
-    <img class="carousel" src="img/carousel1.jpeg" alt="">
+    <img class="carousel1" style="margin-bottom:-4px"src="img/carousel1.jpeg" alt="">
+    <img class="carousel2" style="margin-bottom:-4px"src="img/carousel2.jpeg" alt="">
     <ion-list>
-      <ion-item class="home-items" ng-repeat="home in home" href="#/app/{{home.go}}">
-        <div class="home">
-          <h1 class="home-item-text">{{home.title}}</h1>
-
-        </div>
+      <ion-item class="home-button-first" href="#/app/posts" >
+          <i class="ion-document-text" style="font-size: 40px;"></i>
+          <h3 class="icon-text">Noticias</h3>
+      </ion-item>
+      <ion-item class="home-button-first" href="#/app/events" >
+          <i class="ion-calendar" style="font-size: 40px;"></i>
+          <h3 class="icon-text">Eventos</h3>
+      </ion-item>
+      <ion-item class="home-button-first" href="#/app/live" >
+          <i class="ion-videocamera" style="font-size: 40px;"></i>
+          <h3 class="icon-text">En vivo</h3>
       </ion-item>
     </ion-list>
+    <img class="add-mobile"src="img/add-mobile.png" alt="">
+<div class="live-container">
+<img src="img/instagram.jpg" alt="">
+<img style="max-height:300px;margin-top:100px"src="img/hsbc.png" alt="">
+<img src="img/twitter.jpg" alt="">
+</div>
       <div class="home-paragraph">
 <span><b>El CLUB ES UNICO POR SU VISIÓN</b></span>
 <br>
@@ -57,3 +70,13 @@ DE PROYECTO SOCIAL DEPORTIVO.
 
   </ion-content>
 </ion-view>
+
+
+<!--<ion-list>
+  <ion-item class="home-items" ng-repeat="home in home" href="#/app/{{home.go}}">
+    <div class="home">
+      <h1 class="home-item-text">{{home.title}}</h1>
+
+    </div>
+  </ion-item>
+</ion-list>
