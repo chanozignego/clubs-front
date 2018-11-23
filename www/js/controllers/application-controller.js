@@ -1,5 +1,5 @@
 application
-  .controller('ApplicationController', function($scope, $ionicModal, $timeout) {
+  .controller('ApplicationController', function($scope, $ionicModal, $timeout, $ionicLoading) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -195,4 +195,15 @@ application
         $scope.closeAddauthorized();
       }, 1000);
     }
+
+    $scope.$on('$ionicView.beforeEnter', function(e) {
+      $ionicLoading.show({
+          animation: 'fade-in', showBackdrop: true
+      });
+    });
+
+    $scope.$on('$ionicView.afterEnter', function(e) {
+      $ionicLoading.hide();
+    });
+
   })
