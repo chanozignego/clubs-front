@@ -52,17 +52,27 @@ application
         views: {
           'menuContent': {
             templateUrl: 'templates/authorizations/index.html',
-            controller: 'AuthorizationsController'
+            controller: 'AuthorizationsController',
+            resolve: {
+                authorizations: (Api, $stateParams) => {
+                  return Api.getAuthorizeds();
+                }
+              }
           }
         }
       })
 
       .state('app.authorized', {
-        url: '/authorizations/:authorizedId',
+        url: '/authorizations/:id',
         views: {
           'menuContent': {
             templateUrl: 'templates/authorizations/show.html',
-            controller: 'AuthorizedController'
+            controller: 'AuthorizedController',
+            resolve: {
+                authorized: (Api, $stateParams) => {
+                  return Api.getAuthorized($stateParams.id);
+                }
+              }
           }
         }
       })

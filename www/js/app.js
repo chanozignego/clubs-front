@@ -6,7 +6,9 @@
 // 'starter.controllers' is found in controllers.js
 angular
   .module('clubs-front', [
-    'ionic'
+    'ionic',
+    'toaster', 
+    'ngAnimate'
   ])
 
   .run(function($ionicPlatform) {
