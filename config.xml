@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ClubsApp</name>
+<widget id="Plataforma.Newman" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Newman</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="estebanzignego@getsimp.com" href="http://getsimp.com/">SIMPit</author>
     <content src="index.html" />
@@ -14,11 +14,12 @@
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
-    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashMaintainAspectRatio" value="false" />
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
+    <preference name="StatusBarBackgroundColor" value="#862d2d" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/icon.png" />
@@ -27,19 +28,21 @@
         <icon density="xhdpi" src="resources/android/icon/icon.png" />
         <icon density="xxhdpi" src="resources/android/icon/icon.png" />
         <icon density="xxxhdpi" src="resources/android/icon/icon.png" />
-        <splash density="land-ldpi" src="resources/android/splash/splash.png" />
-        <splash density="land-mdpi" src="resources/android/splash/splash.png" />
-        <splash density="land-hdpi" src="resources/android/splash/splash.png" />
-        <splash density="land-xhdpi" src="resources/android/splash/splash.png" />
-        <splash density="land-xxhdpi" src="resources/android/splash/splash.png" />
-        <splash density="land-xxxhdpi" src="resources/android/splash/splash.png" />
-        <splash density="port-ldpi" src="resources/android/splash/splash.png" />
-        <splash density="port-mdpi" src="resources/android/splash/splash.png" />
-        <splash density="port-hdpi" src="resources/android/splash/splash.png" />
-        <splash density="port-xhdpi" src="resources/android/splash/splash.png" />
-        <splash density="port-xxhdpi" src="resources/android/splash/splash.png" />
-        <splash density="port-xxxhdpi" src="resources/android/splash/splash.png" />
+        <splash density="land-ldpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="land-mdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="land-hdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="land-xhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="land-xxhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="land-xxxhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-ldpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-mdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-hdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-xhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-xxhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
+        <splash density="port-xxxhdpi" height="400" src="resources/android/splash/splash.png" width="400" />
         <splash src="resources/android/splash/splash.png" />
+        <preference name="StatusBarOverlaysWebView" value="true" />
+        <preference name="StatusBarStyle" value="lightcontent" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

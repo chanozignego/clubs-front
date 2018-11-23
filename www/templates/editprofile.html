@@ -1,11 +1,11 @@
-<ion-modal-view style="position:absolute;top:50px;bottom:50px;border-radius:10px;max-width:1000px;margin:0 auto">
+<ion-modal-view class="log-reg">
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeEditprofile()" alt="">
-  <ion-content style="width:80%;margin:0 auto;overflow:hidden;padding-top:30px;">
+  <ion-content class="editprofile-content"style="width:90%;margin:0 auto;padding-top:30px;">
     <label class="filebutton">
-      <div class="align-img-edit"><img class="avatar-edit" src="img/avatar.jpg" border="5" alt=""></div>
+      <div class="align-img" style="margin-top:-20px"><img class="avatar" src="img/avatar.jpg" alt=""></div>
     <span><input class="avatar-file" type="file" id="myfile" name="myfile"></span>
     </label>
-    <div style="margin-bottom:20px;"class="col-xs-12 text-center"><h4>
+    <div style="margin-bottom:20px  ;"class="col-xs-12 text-center"><h4>
       Modifique los campos que desea actualizar. </h4></div>
     <form ng-submit="doEditprofile()">
       <div class="list">
@@ -25,10 +25,7 @@
           <span  class="input-label">Dni</span>
           <input type="text" ng-model="registerData.dni" placeholder="40670488" style="width:10%; margin:auto;font-weight:bold;">
         </label>
-
-
-        <button style="margin-top:30px;"class="button button-block button-positive" type="submit">Actualizar Perfil</button>
-      </div>
+        <button class="button button-block button-positive editprofile-button"style="margin-bottom:100px" type="submit">Actualizar Perfil</button>
     </form>
   </ion-content>
 </ion-modal-view>

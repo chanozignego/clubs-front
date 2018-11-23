@@ -1,11 +1,25 @@
 <ion-view view-title="Club Newman">
 
   <ion-content overflow-scroll="true" style=";background-color: #">
-    <img class="carousel1" style="margin-bottom:-4px"src="img/carousel1.jpeg" alt="">
-    <img class="carousel2" style="margin-bottom:-4px"src="img/carousel2.jpeg" alt="">
+
+    <ion-slides style="max-height:58vh;background-color:#18181a" options="options" slider="data.slider">
+    <ion-slide-page>
+      <img class="carousel1" style="width:100%;margin-bottom:-4px" src="img/carousel1.jpeg" alt="">
+      <img class="carousel2" style="width:100%;margin-bottom:-4px" src="img/carousel2.jpeg" alt="">
+    </ion-slide-page>
+    <ion-slide-page>
+      <img class="carousel1" style="width:100%;margin-bottom:-4px" src="img/carousel1.jpeg" alt="">
+      <img class="carousel2" style="width:100%;margin-bottom:-4px" src="img/carousel2.jpeg" alt="">
+    </ion-slide-page>
+    <ion-slide-page>
+      <img class="carousel1" style="width:100%;margin-bottom:-4px" src="img/carousel1.jpeg" alt="">
+      <img class="carousel2" style="width:100%;margin-bottom:-4px" src="img/carousel2.jpeg" alt="">
+    </ion-slide-page>
+  </ion-slides>
+
     <ion-list>
       <ion-item class="home-button-first" href="#/app/posts" >
-          <i class="ion-document-text" style="font-size: 40px;"></i>
+          <i class="ion-document-text home-icon" style="font-size: 40px;"></i>
           <h3 class="icon-text">Noticias</h3>
       </ion-item>
       <ion-item class="home-button-first" href="#/app/events" >
@@ -36,9 +50,9 @@ DE PROYECTO SOCIAL DEPORTIVO.
             <i class="ion-information-circled" style="font-size: 40px;"></i>
             <h3 class="icon-text">Datos utiles</h3>
         </ion-item>
-        <ion-item class="home-button" href="#/app/services" >
+        <ion-item class="home-button" href="#/app/authorizations" >
             <i class="ion-person-add" style="font-size: 40px;"></i>
-            <h3 class="icon-text">Autorizar</h3>
+            <h3 class="icon-text">Invitados</h3>
         </ion-item>
         <ion-item class="home-button" href="#/app/services" >
             <i class="ion-hammer" style="font-size: 40px;"></i>
