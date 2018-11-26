@@ -13,13 +13,13 @@ application
     };
 
     this.initializeModals = function(scope) {
-      $ionicModal.fromTemplateUrl('templates/changepass.html', {
+      $ionicModal.fromTemplateUrl('templates/profile/changepass.html', {
         scope: scope
       }).then(function(modalChangepass) {
         scope.modalChangepass = modalChangepass;
       });
 
-      $ionicModal.fromTemplateUrl('templates/editprofile.html', {
+      $ionicModal.fromTemplateUrl('templates/profile/edit.html', {
         scope: scope
       }).then(function(modalEditprofile) {
         scope.modalEditprofile = modalEditprofile;

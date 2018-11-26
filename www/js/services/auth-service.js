@@ -14,19 +14,19 @@ application
     };
 
     this.initializeModals = function(scope) {
-      $ionicModal.fromTemplateUrl('templates/login.html', {
+      $ionicModal.fromTemplateUrl('templates/auth/login.html', {
         scope: scope
       }).then(function(modalLogin) {
         scope.modalLogin = modalLogin;
       });
 
-      $ionicModal.fromTemplateUrl('templates/register.html', {
+      $ionicModal.fromTemplateUrl('templates/auth/register.html', {
         scope: scope
       }).then(function(modalSignUp) {
         scope.modalSignUp = modalSignUp;
       });
 
-      $ionicModal.fromTemplateUrl('templates/forgotpass.html', {
+      $ionicModal.fromTemplateUrl('templates/auth/forgotpass.html', {
         scope: scope
       }).then(function(modalForgotpass) {
         scope.modalForgotpass = modalForgotpass;
