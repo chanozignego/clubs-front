@@ -2,22 +2,23 @@
   <ion-content>
     <ion-tabs class="tabs-icon-top tabs-color-active-positive">
       <ion-tab title="Mis Reservas" icon-on="ion-ios-stopwatch" icon-off="ion-ios-stopwatch-outline">
-        <ion-view  class="reserva-bug"view-title="Reservas">
-          <ion-content>
+        <ion-view view-title="Reservas">
             <ion-list class="reservations">
               <ion-item class="reservation" ng-repeat="reservation in reservations" href="#/app/reservations/{{reservation.id}}">
                 <div ng-include src="'templates/reservations/reservationCard.html'"></div>
               </ion-item>
             </ion-list>
-          </ion-content>
         </ion-view>
       </ion-tab>
 
-      <ion-tab title="Nueva Reserva" icon-on="ion-ios-plus" icon-off="ion-ios-plus-outline">
-        <ion-view>
-          <div ng-include src="'templates/usefulData/documents.html'"></div>
+      <ion-tab title="Mis Reservas" icon-on="ion-ios-stopwatch" icon-off="ion-ios-stopwatch-outline">
+        <ion-view view-title="Reservas">
+            <ion-list class="reservations">
+              <ion-item class="reservation" ng-repeat="reservation in reservations" href="#/app/reservations/{{reservation.id}}">
+                <div ng-include src="'templates/reservations/reservationCard.html'"></div>
+              </ion-item>
+            </ion-list>
         </ion-view>
       </ion-tab>
-    </ion-tabs>
   </ion-content>
 </ion-view>

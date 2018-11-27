@@ -1,9 +1,26 @@
 <ion-view view-title="Evento" >
-  <ion-content>
+  <ion-content overflow-scroll="true">
     <div class="reserva-data single-event">
-      <h1 class="reservation-bookeable single-event-title"><b>{{event.title}}</b></h1>
-      <img style="border-radius: 20px;object-fit:cover;width:100%;margin: 0 auto;"src="{{event.img}}" alt="">
-      <h4 style="padding-top:30px;margin-bottom:50px;"> {{event.description}} </p>
+    <h1 class="reservation-bookeable single-event-title"><b>{{event.title}}</b></h1>
+</div>
+        <ion-slides style="border-radius: 20px;object-fit:cover;width:80%;margin: 0 auto;" options="options" slider="data.slider">
+        <ion-slide-page>
+          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+        </ion-slide-page>
+        <ion-slide-page>
+          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+        </ion-slide-page>
+        <ion-slide-page>
+          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
+        </ion-slide-page>
+      </ion-slides>
+
+    <div class="reserva-data single-event" style="margin-top:-100px">
+
+          <h4 style="padding-top:30px;margin-bottom:50px;"> {{event.description}} </p>
         <h4> <b>Fecha:</b> {{event.date}}. </h4>
       <h4> <b>Horario:</b> {{event.time}} Hs.</h4>
       <h4> <b>Lugar:</b> {{event.place}}. </h4>

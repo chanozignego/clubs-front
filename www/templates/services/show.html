@@ -1,10 +1,18 @@
 <ion-view view-title="Servicio">
   <ion-content>
     <ion-icon name="call"></ion-icon>
+    <div style="margin-left:0"class="single-emergency">
     <ion-list class="emergencies">
-      <ion-item class="emergency" ng-repeat="service in service" href="#/app/services/{{service.id}}">
+      <ion-item class="reservation service" ng-repeat="service in service" href="#/app/services/{{service.id}}">
         <div ng-include src="'templates/services/serviceCard.html'"></div>
       </ion-item>
     </ion-list>
+      </div>
+
+      <div style="margin-left:0;"class="side-emergency">
+        <img src="img/swissmedical.jpg" alt="">
+        <img src="img/osde.jpeg" alt="">
+        <img src="img/emergencias.png" alt="">
+      </div>
   </ion-content>
 </ion-view>

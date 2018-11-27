@@ -29,3 +29,25 @@ angular
     });
   })
 
+  .run(function($rootScope,$ionicPlatform){
+    $ionicPlatform.registerBackButtonAction(function(e){
+      if ($rootScope.backButtonPressedOnceToExit) {
+        ionic.Platform.exitApp();
+      }
+      else if ($rootScope.$viewHistory.backView) {
+        $rootScope.$viewHistory.backView.go();
+      }
+      else {
+        $rootScope.backButtonPressedOnceToExit = true;
+        window.plugins.toast.showShortCenter(
+          "Presione Nuevamente para salir.",function(a){},function(b){}
+        );
+        setTimeout(function(){
+          $rootScope.backButtonPressedOnceToExit = false;
+        },2000);
+      }
+      e.preventDefault();
+      return false;
+    },101);
+
+  });

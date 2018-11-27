@@ -2,17 +2,18 @@
   <ion-content >
 
 
-    <div style="margin-left:0"class="single-post">
+    <div style="margin-left:0"class="single-emergency">
     <ion-icon name="call"></ion-icon>
     <ion-list class="emergencies">
       <ion-item class="emergency" ng-repeat="emergency in emergencies" href="#/app/emergencies/{{emergency.id}}">
-        <div ng-include src="'templates/emergencies/emergencyCard.html'"></div>
+        <div href="911" ng-include src="'templates/emergencies/emergencyCard.html'"></div>
       </ion-item>
     </ion-list>
   </div>
-  <div style="margin-left:0;"class="side-post">
+  <div style="margin-left:0;"class="side-emergency">
     <img src="img/swissmedical.jpg" alt="">
-    <img style="object-fit:scale-down"src="img/osde.jpeg" alt="">
+    <img src="img/osde.jpeg" alt="">
+    <img src="img/emergencias.png" alt="">
   </div>
   </ion-content>
 </ion-view>

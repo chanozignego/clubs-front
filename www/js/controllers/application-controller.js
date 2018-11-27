@@ -8,7 +8,8 @@ angular
     // listen for the $ionicView.enter event:
     //$scope.$on('$ionicView.enter', function(e) {
     //});
-
+    $scope.options = {loop: false,speed: 1500, autoplay:'4000',
+    };
     // Form data for the login modal
     $scope.loginData = {};
 
