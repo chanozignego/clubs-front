@@ -1,22 +1,31 @@
 <ion-view view-title="Evento" >
   <ion-content overflow-scroll="true">
     <div class="reserva-data single-event">
-    <h1 class="reservation-bookeable single-event-title"><b>{{event.title}}</b></h1>
+      <h1 class="reservation-bookeable single-event-title"><b>{{event.title}}</b></h1>
+    </div>
+    <div class="single-post">
+    <img class="single-post-img" src="img/event.jpg" alt="">
+    <h4 class="single-post-description"> {{post.description}} </h4>
+    </div>
+
+
+
+
+
+<div class="side-post">
+<img style="object-fit:cover"class="post-add" src="img/add.jpg" alt="">
+<ion-list>
+  <h2 style="font-size:20px;margin-top:20px;font-weight:bold">Tambien te puede interesar:</h2>
+      <a class="interest" href="#">Reunión de consorcio anual para definir temas</a>
+      <a class="interest" href="#">Torneo abierto de basquet. Inscripcion $1000</a>
+      <a class="interest" href="#">Torneo abierto de basquet. Inscripcion $20000</a>
+      <a class="interest" href="#">Charla de adicciones brindada por Carlos Damin</a>
+  </ion-item>
+</ion-list>
+<img src="img/osde.jpeg" alt="">
 </div>
-        <ion-slides style="border-radius: 20px;object-fit:cover;width:80%;margin: 0 auto;" options="options" slider="data.slider">
-        <ion-slide-page>
-          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-        </ion-slide-page>
-        <ion-slide-page>
-          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-        </ion-slide-page>
-        <ion-slide-page>
-          <img class="carousel1" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-          <img class="carousel2" style="width:100%;margin-bottom:-4px" src="{{event.img}}" alt="">
-        </ion-slide-page>
-      </ion-slides>
+
+
 
     <div class="reserva-data single-event" style="margin-top:-100px">
 
@@ -26,6 +35,8 @@
       <h4> <b>Lugar:</b> {{event.place}}. </h4>
       <h4> <b>Asistiran:</b> {{event.assist}} personas. </h4>
     </div>
+
+
 
     <form class="comment" style="margin-bottom:30px;">
       <h3>Envíe una consulta:</h3>
@@ -39,6 +50,6 @@
           <button class="button button-block button-assertive" ng-click="" type="submit">Asistire al evento</button>
         </div>
     </form>
-
+<img class="add-mobile"src="img/add-mobile.png" alt="">
   </ion-content>
 </ion-view>

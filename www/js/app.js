@@ -21,33 +21,10 @@ angular
         window.Keyboard.hideKeyboardAccessoryBar(true);
       }
 
-      if (window.StatusBar) {
+    //  if (window.StatusBar) {
         // Set the statusbar to use the default style, tweak this to
         // remove the status bar on iOS or change it to use white instead of dark colors.
-        StatusBar.styleDefault();
+        //StatusBar.styleDefault();
       }
     });
   })
-
-  .run(function($rootScope,$ionicPlatform){
-    $ionicPlatform.registerBackButtonAction(function(e){
-      if ($rootScope.backButtonPressedOnceToExit) {
-        ionic.Platform.exitApp();
-      }
-      else if ($rootScope.$viewHistory.backView) {
-        $rootScope.$viewHistory.backView.go();
-      }
-      else {
-        $rootScope.backButtonPressedOnceToExit = true;
-        window.plugins.toast.showShortCenter(
-          "Presione Nuevamente para salir.",function(a){},function(b){}
-        );
-        setTimeout(function(){
-          $rootScope.backButtonPressedOnceToExit = false;
-        },2000);
-      }
-      e.preventDefault();
-      return false;
-    },101);
-
-  });

@@ -1,7 +1,7 @@
 <ion-view view-title="Reservas">
   <ion-content>
     <ion-tabs class="tabs-icon-top tabs-color-active-positive">
-      <ion-tab title="Mis Reservas" icon-on="ion-ios-stopwatch" icon-off="ion-ios-stopwatch-outline">
+      <ion-tab title="Mis Reservas" icon-on="ion-ios-clock-outline" icon-off="ion-ios-clock">
         <ion-view view-title="Reservas">
             <ion-list class="reservations">
               <ion-item class="reservation" ng-repeat="reservation in reservations" href="#/app/reservations/{{reservation.id}}">
@@ -11,7 +11,7 @@
         </ion-view>
       </ion-tab>
 
-      <ion-tab title="Mis Reservas" icon-on="ion-ios-stopwatch" icon-off="ion-ios-stopwatch-outline">
+      <ion-tab title="Nueva Reserva" icon-on="ion-ios-plus-outline" icon-off="ion-ios-plus">
         <ion-view view-title="Reservas">
             <ion-list class="reservations">
               <ion-item class="reservation" ng-repeat="reservation in reservations" href="#/app/reservations/{{reservation.id}}">
