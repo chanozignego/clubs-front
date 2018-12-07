@@ -178,6 +178,67 @@ $scope.doEditprofile = function() {
   }, 1000);
 };
 
+$scope.EditauthorizedData = {};
+
+
+$ionicModal.fromTemplateUrl('templates/editauthorized.html', {
+  scope: $scope
+}).then(function(modalEditauthorized) {
+  $scope.modalEditauthorized = modalEditauthorized;
+});
+
+
+$scope.closeEditauthorized = function() {
+  $scope.modalEditauthorized.hide();
+};
+
+
+$scope.editauthorized = function() {
+  $scope.closeRegister();
+  $scope.closeLogin();
+  $scope.closeForgotpass();
+  $scope.modalEditauthorized.show();
+};
+
+
+$scope.doEditauthorized = function() {
+  console.log('Doing editauthorized', $scope.editauthorizedData);
+
+  $timeout(function() {
+    $scope.closeEditauthorized();
+  }, 1000);
+};
+
+$scope.DeleteauthorizedData = {};
+
+
+$ionicModal.fromTemplateUrl('templates/deleteauthorized.html', {
+  scope: $scope
+}).then(function(modalDeleteauthorized) {
+  $scope.modalDeleteauthorized = modalDeleteauthorized;
+});
+
+
+$scope.closeDeleteauthorized = function() {
+  $scope.modalDeleteauthorized.hide();
+};
+
+
+$scope.deleteauthorized = function() {
+  $scope.closeRegister();
+  $scope.closeLogin();
+  $scope.closeForgotpass();
+  $scope.modalDeleteauthorized.show();
+};
+
+
+$scope.doDeleteauthorized = function() {
+  console.log('Doing deleteauthorized', $scope.deleteauthorizedData);
+
+  $timeout(function() {
+    $scope.closeDeleteauthorized();
+  }, 1000);
+};
 
 $scope.AddauthorizedData = {};
 

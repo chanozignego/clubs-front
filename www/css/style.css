@@ -1,5 +1,8 @@
 /* home */
-ion-slides{background-color:#18181a;height: 650px}
+.twitterimg{display: inline-block;width:25%;height:70%}
+.sports{background-color:#993333;display: flex;justify-content: center}
+.sports a{font-weight: bold;display: inline-block;color:#ffc30d;font-size: 18px;padding: 10px;padding-right: 50px;text-decoration: none;}
+.sports a:hover{opacity:0.8;transition: 0.5s;color:#fff}
 .carousel-title{display:none;position: absolute;left: 38%;bottom: 24%;text-decoration: none;font-size: 30px;font-family:'Raleway', sans-serif;font-weight: lighter;color: #e6e6e6;padding: 100px 0;line-height: 40PX;margin-top: 0; }
 .carousel-subtitle{display:none;position: absolute;left: 35%;bottom: 16%;text-decoration: none;font-size: 40px;font-family:'Raleway', sans-serif;font-weight: bolder;color: #e6e6e6;padding: 100px 0;line-height: 40PX;margin-top: 0;}
 .add-mobile {width: 100%;margin: -6px 0;max-height: 135px}
@@ -17,7 +20,8 @@ ion-slides{background-color:#18181a;height: 650px}
 .sponsors{color: #808080;font-size: 20px}
 .sponsors-img{width: 100%;max-width: 700px}
 .home-sponsors{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 20px;}
-@media (max-width:1024px) {ion-slides{height: 500px}.live-container{display: none}.carousel-subtitle{position: absolute;left: 30%;bottom: 16%}.carousel-title{position: absolute;left: 33%;bottom: 24%;}}
+ion-slides{overflow: hidden;width:67%;height: 70%;display: inline-block;}
+@media (max-width:1024px) {.sports{display:none}.twitterimg{display:none} ion-slides{height: 500px;width: 100%}.live-container{display: none}.carousel-subtitle{position: absolute;left: 30%;bottom: 16%}.carousel-title{position: absolute;left: 33%;bottom: 24%;}}
 @media (max-width:1150px) {.home-button{width:33%}.home-button-first{width:33%}}
 @media (max-width:900px) {ion-slides{height: 400px}}
 @media (max-width:800px) {ion-slides{height: 350px}.carousel-subtitle{position: absolute;left: 27%;bottom: 16%}.carousel-title{position: absolute;left: 29%;bottom: 24%;}}
@@ -29,6 +33,7 @@ ion-slides{background-color:#18181a;height: 650px}
 @media (max-width:767px) {.home-icon{padding-left: 7px;} .carousel1{display:none}.sponsors{font-size: 15px}.icon-text{display:none} .home-item-text{font-size:1.3rem;padding-top:15px;padding-bottom: 15px}}
 @media (max-width:500px) {.home-paragraph{background-color: #18181a; color:#ddd; font-size: 17px; font-weight: 100; text-align: center; line-height: 23px; margin-top:0;padding: 25px 15px;}}
 @media (max-width:350px) {ion-slides{height: 180px}.carousel-title{font-size:22px;left: 18%;top: -15%;}.carousel-subtitle{font-size: 25px;left: 15%;bottom: -40%;}}
+
 /* navbar */
 .avatar-navbar{position: absolute;z-index: 999;height: 45px;right:20px;top:4px; ;width: 250px;border-top-right-radius:20px;border-bottom-right-radius:20px;  }
 .avatar-navbar:hover{opacity: 0.8;}
@@ -52,6 +57,8 @@ ion-slides{background-color:#18181a;height: 650px}
 @media (min-width:680px) {.log-reg{border-radius: 10px;}.log-reg-form{width:80%}}
 @media (max-width:425px) {.log-img{height: 100px}.reg-img{height: 100px}}
 @media (max-width:425px) {.reg-img{height:60px}}
+
+
 /* emergencies */
 .emergency{font-weight: bold;}
 .secondary-info{padding-top: 20px;font-weight: normal;}
@@ -68,7 +75,9 @@ ion-slides{background-color:#18181a;height: 650px}
 .reservations-time{float: right;clear:right;padding-top: 17px;}
 .reservations-description{padding-top: 17px;}
 .reservation-button{width:48%;display:inline-block}
-@media (max-width:950px){.reservation-button{width: 100%;display: block}}
+@media (max-width:950px){.reservation-button{width: 100%;display: block}.newreservationcomment{margin-top: -310px}}
+.newreservationlabel{height: 55px;max-width: 800px;margin: 10px auto;font-weight: bold;width: 100%;border-radius: 10px}
+@media (min-width:680px) {.newreservationlabel{height: 85px;border-radius: 20px;margin-bottom: 20px;margin-top: 20px}}
 
 
 /* reservation */
@@ -77,7 +86,7 @@ ion-slides{background-color:#18181a;height: 650px}
 .reservation-bookeable{text-align:center;padding-bottom:60px;}
 .reserva-bug{margin-top:50px}
 .reservation-bug-mobile{position:relative;top:4px;right:10px;float:right}
-@media (max-width:680px) { .reservation-bug-mobile{right:7px}.reserva-data{width: 80%;padding-top:30px;} .comment {width:80%} .reservation-bookeable{padding-bottom:20px;}}
+@media (max-width:680px) { .reservation-bug-mobile{right:4px}.reserva-data{width: 80%;padding-top:30px;} .comment {width:80%} .reservation-bookeable{padding-bottom:20px;}}
 @media (min-width:680px){.reservation:hover{opacity: 0.7;transition: 0.3s}.reservations-bookeable{display: inline-block}}
 @media (max-width:768px) {.reserva-bug{margin-top: 0}}
 
@@ -157,7 +166,7 @@ ion-slides{background-color:#18181a;height: 650px}
 /* general */
 .sidebar-text{display:inline-block; vertical-align:top;font-family:helvetica;font-style: italic;}
 .sidebar-logo{height: 100px}
-@media (min-width:768px){button:hover{opacity: 0.8;transition: 0.3s}.onhover:hover{opacity: 0.8;transition: 0.3s}}
+@media (min-width:768px){button:hover{opacity: 0.8;transition: 0.3s}.onhover:hover{opacity: 0.7;transition: 0.4s}}
 .item-content p{white-space: normal;}
 .item-content h1{white-space: normal;}
 .bar.bar-stable{background-color: #993333}

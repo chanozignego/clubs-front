@@ -20,6 +20,16 @@ angular
       }
     })
 
+    .state('app.sports', {
+      url: '/sports',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/sports/index.html',
+          controller: 'SportsController'
+        }
+      }
+    })
+
     .state('app.emergencies', {
       url: '/emergencies',
       views: {

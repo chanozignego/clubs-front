@@ -1,6 +1,6 @@
-<ion-content class="useful-content">
+<ion-content class="useful-content" style="top: 50px;">
   <ion-list>
-    <ion-item class="" ng-repeat="instruction in instructions"  href="{{instruction.url}}">
+    <ion-item class="onhover" ng-repeat="instruction in instructions"  href="{{instruction.url}}">
       <div ng-include src="'templates/usefulData/instructionCard.html'"></div>
     </ion-item>
   </ion-list>
