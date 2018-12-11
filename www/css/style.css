@@ -1,5 +1,5 @@
 /* home */
-.twitterimg{display: inline-block;width:25%;height:70%}
+.twitterimg{display: inline-block;width:26%;height:70%}
 .sports{background-color:#993333;display: flex;justify-content: center}
 .sports a{font-weight: bold;display: inline-block;color:#ffc30d;font-size: 18px;padding: 10px;padding-right: 50px;text-decoration: none;}
 .sports a:hover{opacity:0.8;transition: 0.5s;color:#fff}
@@ -20,11 +20,11 @@
 .sponsors{color: #808080;font-size: 20px}
 .sponsors-img{width: 100%;max-width: 700px}
 .home-sponsors{background-color: #18181a; color:#ddd; text-decoration: none; font-size: 30px; font-family: 'Raleway', sans-serif; font-weight: 100; text-align: center; line-height: 28px; margin-top:0; padding: 20px;}
-ion-slides{overflow: hidden;width:67%;height: 70%;display: inline-block;}
-@media (max-width:1024px) {.sports{display:none}.twitterimg{display:none} ion-slides{height: 500px;width: 100%}.live-container{display: none}.carousel-subtitle{position: absolute;left: 30%;bottom: 16%}.carousel-title{position: absolute;left: 33%;bottom: 24%;}}
+ion-slides{overflow: hidden;width:73%;height: 70%;display: inline-block;}
+@media (max-width:1024px) {.sports{display:none}.twitterimg{display:none} ion-slides{height: 600px;width: 100%}.live-container{display: none}.carousel-subtitle{position: absolute;left: 30%;bottom: 16%}.carousel-title{position: absolute;left: 33%;bottom: 24%;}}
 @media (max-width:1150px) {.home-button{width:33%}.home-button-first{width:33%}}
-@media (max-width:900px) {ion-slides{height: 400px}}
-@media (max-width:800px) {ion-slides{height: 350px}.carousel-subtitle{position: absolute;left: 27%;bottom: 16%}.carousel-title{position: absolute;left: 29%;bottom: 24%;}}
+@media (max-width:900px) {ion-slides{height: 450px}}
+@media (max-width:800px) {ion-slides{height: 400px}.carousel-subtitle{position: absolute;left: 27%;bottom: 16%}.carousel-title{position: absolute;left: 29%;bottom: 24%;}}
 @media (max-width:680px) {ion-slides{height: 320px}.carousel-subtitle{position: absolute;left: 22%;bottom: 2%}.carousel-title{position: absolute;left: 25%;bottom: 14%;}}
 @media (max-width:580px) {ion-slides{height: 260px}.carousel-subtitle{position: absolute;left: 14%;bottom: -25%}.carousel-title{position: absolute;left: 18%;bottom: -15%;}}
 @media (max-width:480px) {ion-slides{height: 220px}.carousel-subtitle{font-size: 30px;position: absolute;left: 18%;bottom: -40%}.carousel-title{font-size: 20px;position: absolute;left: 25%;bottom: -28%;}}
@@ -95,16 +95,18 @@ ion-slides{overflow: hidden;width:67%;height: 70%;display: inline-block;}
 .avatar-edit{border-radius:50%; object-fit:cover; width:300px; height:300px;margin: 0 auto;}
 .align-img-edit{width: 300px;margin:0 auto;margin-top: 30px;margin-bottom: 30px;}
 .align-img{width: 400px;margin:0 auto;margin-top: 30px;margin-bottom: 30px;}
-@media (max-width:680px) {.avatar-edit{width: 250px;height: 250px}.align-img{width: 250px} .avatar{width: 250px;height: 250px}.align-img{width: 250px}.align-img-edit{width: 250px}}
+@media (max-width:680px) {.avatar-edit{width: 250px;height: 250px}.align-img{width: 250px} .avatar{width: 250px;height: 250px}.align-img-edit{width: 250px}}
 @media (max-width:425px) { .avatar-edit{width: 220px;height: 220px;margin-bottom: -20px}.avatar{width: 220px;height: 220px;margin-bottom: -20px}.align-img{width: 220px}.align-img-edit{width: 220px}}
-@media (max-width:350px) { .avatar-edit{width: 130px;height: 130px;margin-bottom: -20px} .avatar{width: 130px;height: 130px;margin-bottom: -20px}.align-img{width: 130px}.align-img-edit{width: 130px}}
+@media (max-width:350px) { .avatar-edit{width: 130px;height: 130px;margin-bottom: -20px} .avatar{width: 130px;height: 130px;margin-bottom: -20px}.align-img{width: 130px}.avatar-edit{width: 30px}}
 @media (min-width:680px){.align-img img:hover {opacity: 0.8;transition: 1s}}
 .avatar-edit{border-radius:50%; object-fit:cover; width:300px; height:300px;margin: 0 auto;}
 .editprofile-button{margin-top:10px;margin-bottom:90px}
 .align-img-edit{width: 300px;margin:0 auto;margin-bottom: 30px;}
+.changepass-button{width:300px;margin:0 auto;}
 @media (max-width:680px) {.editprofile-content{padding-top: 10px} .avatar-edit{width: 250px;height: 250px}.align-img-edit{width: 250px}}
 @media (min-width:680px){.align-img-edit img:hover {opacity: 0.8;transition: 1s}}
-@media (max-width:425px) {.editprofile-bug{margin-bottom: 300px}}
+@media (max-width:425px) {.editprofile-bug{margin-bottom: 300px}.changepass-img{height: 70px;}.changepass-button{width:100%;bottom:10px}}
+@media (max-height:600px) {.changepass-text h4{font-size: 15px;margin-bottom:-30px;}.changepass-img{height: 50px;}}
 
 /* authorized */
 .authorized-data{display: inline-block;width: 49%;font-weight: bold}
@@ -156,12 +158,14 @@ ion-slides{overflow: hidden;width:67%;height: 70%;display: inline-block;}
 .live-side{width: 24.5%}
 .social{width:49%}
 .social-buttons{display:none}
+.live-header{display:none}
 @media (max-width:1024px) {.live-title-mobile{display: inline-block}}
-@media (max-width:768px) {.live-title{display: inline-block}.live{width:100%;margin:0;padding:0}.live-side{display:block;width: 100%}.social-buttons{display:block;position: fixed;left: 7px;bottom: -5px;    right: 0;}.live-buttons{display:block}}
-
+@media (max-width:768px) {.live-header-text{font-family: Arial, Helvetica, sans-serif;font-style: oblique; font-weight: bold;padding-right:20px;padding-left: 20px}.live-header{display: inline-flex;text-align:center;padding:5px;padding-top: 15px}.live-title{display: inline-block}.live{width:100%;margin:0;padding:0}.live-side{display:none;}.social-buttons{display:block;position: fixed;left: 7px;bottom: -5px;    right: 0;}.live-buttons{display:block}}
+@media (max-width:380px) {.live-header-text{font-size: 28px;padding-top: 8px}}
 /* services */
 @media (min-width:768px) {.service{border-radius: 10px;margin-top:30px;margin-left:70px;margin-right: 150px;}}
-
+.add-services{position:absolute;bottom:0px;z-index:999}
+@media (max-height:600px) {.add-services{position: static;display:block;width: 100%;margin: -6px 0;max-height: 135px}}
 
 /* general */
 .sidebar-text{display:inline-block; vertical-align:top;font-family:helvetica;font-style: italic;}
@@ -177,8 +181,6 @@ ion-slides{overflow: hidden;width:67%;height: 70%;display: inline-block;}
 .swiper-pagination-bullet{background: #993333}
 @media (max-width:380px) {.sidebar-text{margin-top: 10px;font-size: 25px}.sidebar-logo{height: 60px}}
 @media (min-width:768px) {.conteiner{padding: 0px 300px 0px 200px;background-color: #e6e6e6;height: 100vh}}
-
-
 /* img to file input */
 
 label span .avatar-file {

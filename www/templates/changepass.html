@@ -1,8 +1,8 @@
 <ion-modal-view class="log-reg">
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeChangepass()" alt="">
   <ion-content style="width:80%;margin:0 auto;overflow:hidden;">
-    <img src="img/simpit-logo.png" height="130" style="display:block; margin:auto;margin-top:30px;">
-    <div style="margin-bottom:40px;"class="col-xs-12 text-center"><h4>
+    <img src="img/simpit-logo.png" height="130" class="changepass-img" style="display:block; margin:auto;margin-top:30px;">
+    <div style="margin-bottom:40px;" class="col-xs-12 text-center changepass-text"><h4>
       Si cambias la contraseña, cerrarás sesión en tus dispositivos. Cuando vuelvas a iniciar sesión, deberás introducir la nueva contraseña.</h4></div>
       <form ng-submit="dochangepass()">
         <div class="list">
@@ -19,7 +19,7 @@
           </label>
 
         </div>
-        <button class="button button-block button-positive" ng-click="" style="width:300px;margin:0 auto;"type="submit">Actualizar contraseña</button>
+        <button class="button button-block button-positive changepass-button" ng-click="" style=""type="submit">Actualizar contraseña</button>
       </form>
 
   </ion-content>

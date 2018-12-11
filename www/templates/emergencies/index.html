@@ -6,7 +6,7 @@
     <ion-icon name="call"></ion-icon>
     <ion-list class="emergencies">
       <ion-item class="emergency" ng-repeat="emergency in emergencies" href="#/app/emergencies/{{emergency.id}}">
-        <div href="911" ng-include src="'templates/emergencies/emergencyCard.html'"></div>
+        <div href="tel:{{emergency.telephone}}" ng-include src="'templates/emergencies/emergencyCard.html'"></div>
       </ion-item>
     </ion-list>
   </div>
