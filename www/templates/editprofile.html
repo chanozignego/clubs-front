@@ -1,27 +1,27 @@
 <ion-modal-view class="log-reg">
 <img class="close-form" src="img/close.png" height="18px"  ng-click="closeEditprofile()" alt="">
   <ion-content class="editprofile-content"style="width:90%;margin:0 auto;padding-top:30px;">
-    <label class="filebutton">
-      <div class="align-img-edit" style="margin-top:-20px"><img class="avatar-edit" src="img/avatar.jpg" alt=""></div>
+    <label >
+      <div style="margin-top:-20px" class="align-img"><img class="avatar" src="img/avatar.jpg" alt=""></div>
     <span><input class="avatar-file" type="file" id="myfile" name="myfile"></span>
     </label>
     <div style="margin-bottom:20px  ;"class="col-xs-12 text-center"><h4>
       Modifique los campos que desea actualizar. </h4></div>
     <form ng-submit="doEditprofile()">
       <div class="list">
-        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+        <label class="item item-input edit-input">
           <span  class="input-label">Nombre</span>
           <input type="text" ng-model="registerData.name" placeholder="Marcos Acuña" style="width:10%; margin:auto;font-weight:bold;">
         </label>
-        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+        <label class="item item-input edit-input">
           <span  class="input-label">Email</span>
           <input type="email" ng-model="registerData.email" placeholder="marcosacuña@gmail.com" style="width:10%; margin:auto;font-weight:bold;">
         </label>
-        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+        <label class="item item-input edit-input">
           <span  class="input-label">Telefono</span>
           <input type="text" ng-model="registerData.telephone" placeholder="+5491151064530" style="width:10%; margin:auto;font-weight:bold;">
         </label>
-        <label class="item item-input" style="border-radius: 15px;margin-bottom:15px;">
+        <label class="item item-input edit-input">
           <span  class="input-label">Dni</span>
           <input type="text" ng-model="registerData.dni" placeholder="40670488" style="width:10%; margin:auto;font-weight:bold;">
         </label>
